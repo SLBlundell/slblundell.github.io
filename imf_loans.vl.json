@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "IMF Lending Outstanding ",
-    "subtitle": "Credit outstanding to all members SDRs (billions), Source: IMF",
+    "subtitle": "Credit outstanding to all members SDRs (USD billions), Source: IMF",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -11,7 +11,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/data_IMF_creditOutstanding.csv"
   },
-  "transform": [{"calculate": "datum.Totals/1000000000", "as": "billions"}],
+  "transform": [{"calculate": "datum.Adj_Totals/1000000000", "as": "billions"}],
   "height": 300,
   "width": 300,
   "mark": {"type": "bar", "color": "#004c97"},
@@ -19,6 +19,7 @@
     "x": {
       "field": "Year",
       "type": "temporal",
+      
       "axis": {"title": null, "grid": false, "ticks": false, "labelAngle": 45}
     },
     "y": {
