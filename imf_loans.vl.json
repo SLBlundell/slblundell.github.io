@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "IMF Lending Outstanding ",
-    "subtitle": "Credit outstanding to all members SDRs (USD billions), Source: IMF",
+    "subtitle": "Credit outstanding to all members SDRs (USD billions, CPI Adjusted), Source: IMF",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",

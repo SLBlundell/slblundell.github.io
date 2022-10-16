@@ -34,6 +34,9 @@
         <h3>Labour Market</h3>
         <p>My second chart looks at the unemployment rate of 25-49 year olds in the UK</p>
         <div class="chart" id="Chart2"> </div>
+
+        <h3>IMF Loans</h3>
+        <div class="chart" id="Chart3"> </div>
     </div> 
 </body>
 
@@ -42,10 +45,12 @@
     //Define charts:
     var myChart1 = "chartGDP4.json";
     var myChart2 = "labmkt6.json";
+    var myChart3 = "imf_loans.vl.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
 </script>
 
 </html>
