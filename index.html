@@ -36,7 +36,12 @@
         <div class="chart" id="Chart2"> </div>
 
         <h3>IMF Loans</h3>
+        <p>Week 2 portfolio charts</p>
         <div class="chart" id="Chart3"> </div>
+        
+        <h3>IMF Loans pt.2</h3>
+        <p>Week 2 portfolio charts</p>
+        <div class="chart" id="Chart4"> </div>
     </div> 
 </body>
 
@@ -45,12 +50,14 @@
     //Define charts:
     var myChart1 = "chartGDP4.json";
     var myChart2 = "labmkt6.json";
-    var myChart3 = "imf_loans.vl.json";
+    var myChart3 = "imf_loans.json";
+    var myChart3 = "imf_loans_adjusted.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
 </script>
 
 </html>
