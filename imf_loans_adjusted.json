@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "IMF Lending Outstanding ",
+    "text": "IMF Lending Outstanding Adjusted for Inflation",
     "subtitle": [
       "Credit outstanding to all members SDRs (SDR billions, SDR Deflator Adjusted)",
       "Source: IMF"

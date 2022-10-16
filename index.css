@@ -30,8 +30,8 @@ h1, h3, p{
 
 /* Set the apperance of the class, chart */
 .chart{
-    /*background-color: orange;*/
     width:330px;
+    margin: auto;
     border-top:    1px solid  #d8d4d4;
     border-right:  1px solid #ffffff;
     border-bottom: 1px solid #d8d4d4;
