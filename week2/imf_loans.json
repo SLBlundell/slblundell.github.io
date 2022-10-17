@@ -13,7 +13,7 @@
   },
   "transform": [{"calculate": "datum.Adj_Totals/1000000000", "as": "billions"}],
   "height": 300,
-  "width": 300,
+  "width": "container",
   "mark": {"type": "bar", "color": "#004c97"},
   "encoding": {
     "x": {
