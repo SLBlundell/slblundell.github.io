@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Gza';
-    src: local('Gza Super'), local('Gza-Super'),
-        url('Gza-Super.woff2') format('woff2'),
-        url('Gza-Super.woff') format('woff'),
-        url('Gza-Super.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
