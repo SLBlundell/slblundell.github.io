@@ -17,14 +17,15 @@ body{
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1{
     color:rgb(17, 17, 17);
-    font-family: 'GzaTrial', 'Super';
+    font-family: 'Gza', 'Super';
+    src: url('Gza-Super.woff2') format('woff2');
     font-size: xx-large;
     text-align: center;
 }
     
 h3, p{
     color: rgb(17, 17, 17);
-    font-family: 'Messina Sans Mono Trial', 'Black';
+    font-family: 'Roboto Mono', 'normal';
     text-align: center;
 }
 
