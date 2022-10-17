@@ -2,12 +2,13 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "IMF Lending Outstanding Adjusted for Inflation",
+    "fontSize" : 15,
     "subtitle": [
       "Credit outstanding to all members SDRs (SDR billions, SDR Deflator Adjusted)",
       "Source: IMF"
     ],
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black"
   },
@@ -30,7 +31,7 @@
       "field": "billions",
       "type": "quantitative",
       "title": "",
-      "axis": {"grid": false}
+      "axis": {"grid": true}
     }
   },
   "config": {}

@@ -62,11 +62,13 @@
 
     "text": "Unemployment rate (25-49)",
 
+    "fontSize" : 15,
+
     "subtitle": "United Kingdom seasonally adjusted",
 
     "subtitleFontStyle":"italic",
 
-    "subtitleFontSize":10,
+    "subtitleFontSize":12,
 
     "anchor": "start",
 

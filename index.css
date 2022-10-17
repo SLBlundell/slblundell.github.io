@@ -20,7 +20,7 @@ h1{
     font-family: 'Gza', 'Super';
     font-size: xx-large;
     text-align: center;
-    border-bottom: 3px solid #000000;
+    border-bottom: 2.5px solid #000000;
     padding: 5px;
 }
     
@@ -42,7 +42,7 @@ h3, p{
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
+    padding: 7.5px;
     border-top:    1px solid  #d8d4d4;
     border-bottom: 1px solid #d8d4d4;
 

@@ -14,9 +14,10 @@
   ],
   "title": {
     "text": "GDP per capita - by quarter",
+    "fontSize" : 15,
     "subtitle": "At current prices (£). Source: ONS",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black"
   },
