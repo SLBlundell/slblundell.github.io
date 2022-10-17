@@ -9,7 +9,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/data_IMF_creditOutstanding.csv"
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week2/data_IMF_creditOutstanding.csv"
   },
   "transform": [{"calculate": "datum.Adj_Totals/1000000000", "as": "billions"}],
   "height": 300,
