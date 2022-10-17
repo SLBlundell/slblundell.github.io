@@ -15,12 +15,19 @@ body{
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
+h1{
     color:rgb(17, 17, 17);
     font-family: 'GzaTrial', 'Super';
+    font-size: xx-large;
     text-align: center;
 }
     
+h3, p{
+    color: rgb(17, 17, 17);
+    font-family: 'Messina Sans Mono Trial', 'Black';
+    text-align: center;
+}
+
 .myWeek1{
     margin: auto;
     max-width: 600px;
