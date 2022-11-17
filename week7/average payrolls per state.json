@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "view": {"stroke": "transparent"},
+  "title": {
+    "text": "NBA Team Payrolls per State",
+    "fontSize": 12,
+    "subtitle": [
+      "Average of NBA team payrolls for 2022/23 season. Source HoopsHype, 2022",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+    "format": {"property": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "key": "State",
+        "fields": ["payroll_avg"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week7/payroll_states.csv"
+        }
+      }
+    }
+  ],
+  "projection": {"type": "albersUsa"},
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "payroll_avg",
+      "legend": {"title": null, "orient": "right", "direction": "vertical"},
+      "type": "quantitative",
+      "scale": {"scheme": "lighttealblue", "reverse": false}
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "title": "State"},
+      {"field": "payroll_avg", "title": "Average Payroll:", "format": ",d"}
+    ]
+  },
+  "config": {}
+}
