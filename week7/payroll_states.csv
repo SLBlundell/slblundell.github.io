@@ -1,51 +1,51 @@
 ﻿State,Abbr,payroll_avg
-Alabama,AL,0
-Alaska,AK,0
+Alabama,AL,NA
+Alaska,AK,NA
 Arizona,AZ,172338400
-Arkansas,AR,0
+Arkansas,AR,NA
 California,CA,182495155.5
 Colorado,CO,172032689
-Connecticut,CT,0
-Delaware,DE,0
+Connecticut,CT,NA
+Delaware,DE,NA
 Florida,FL,146977585
 Georgia,GA,157980277
-Hawaii,HI,0
-Idaho,ID,0
+Hawaii,HI,NA
+Idaho,ID,NA
 Illinois,IL,153420038
 Indiana,IN,95848833
-Iowa,IA,0
-Kansas,KS,0
-Kentucky,KY,0
+Iowa,IA,NA
+Kansas,KS,NA
+Kentucky,KY,NA
 Louisiana,LA,153621754
-Maine,ME,0
-Maryland,MD,0
+Maine,ME,NA
+Maryland,MD,NA
 Massachusetts,MA,175627204
 Michigan,MI,123145093
 Minnesota,MN,178740691
-Mississippi,MS,0
-Missouri,MO,0
-Montana,MT,0
-Nebraska,NE,0
-Nevada,NV,0
-New Hampshire,NH,0
-New Jersey,NJ,0
-New Mexico,NM,0
+Mississippi,MS,NA
+Missouri,MO,NA
+Montana,MT,NA
+Nebraska,NE,NA
+Nevada,NV,NA
+New Hampshire,NH,NA
+New Jersey,NJ,NA
+New Mexico,NM,NA
 New York,NY,168408001.5
 North Carolina,NC,141274738
-North Dakota,ND,0
-Ohio,OH,0
+North Dakota,ND,NA
+Ohio,OH,NA
 Oklahoma,OK,150937642
 Oregon,OR,160879449
 Pennsylvania,PA,166110803
-Rhode Island,RI,0
-South Carolina,SC,0
-South Dakota,SD,0
+Rhode Island,RI,NA
+South Carolina,SC,NA
+South Dakota,SD,NA
 Tennessee,TN,122949665
 Texas,TX,136294123
 Utah,UT,149326867
-Vermont,VT,0
-Virginia,VA,0
+Vermont,VT,NA
+Virginia,VA,NA
 Washington,WA,187738134
 West Virginia,WV,
 Wisconsin,WI,191172887
-Wyoming,WY,0
+Wyoming,WY,NA
