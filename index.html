@@ -47,9 +47,13 @@
         </p>
         <div class="chart" id="Chart4"> </div>
     
-        <h3>NBA Team Payrolls</h3>
-        <p>Week 7 portfolio chart</p>
+        <h3>NBA Team Payrolls 2011 - 2022</h3>
+        <p>Week 4 portfolio chart</p>
         <div class="chart" id="Chart5"></div>
+
+        <h3>NBA Payroll Map</h3>
+        <p>Week 7 portfolio chart</p>
+        <div class="chart" id="Chart6"></div>
     </div> 
 </body>
 
@@ -60,7 +64,9 @@
     var myChart2 = "week1/labmkt6.json";
     var myChart3 = "week2/imf_loans.json";
     var myChart4 = "week2/imf_loans_adjusted.json";
-    var myChart5 = "week7/average payrolls per state.json";
+    var myChart5 = "week4/payrolls.json"
+    var myChart6 = "week7/average payrolls per state.json";
+
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -68,6 +74,7 @@
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
     vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
 </script>
 
 </html>
