@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/team_active_payroll.csv"
+  },
+  "layer": [
+    {
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"aggregate": "mean", "field": "active", "type": "quantitative"},
+        "opacity": {"condition": {"param": "brush", "value": 1}, "value": 0.7}
+      }
+    },
+    {
+      "transform": [{"filter": {"param": "brush"}}],
+      "mark": "rule",
+      "encoding": {
+        "y": {"aggregate": "mean", "field": "active", "type": "quantitative"},
+        "color": {"value": "firebrick"},
+        "size": {"value": 3}
+      }
+    }
+  ],
+  "config": {}
+}
