@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week8/energy_consumption.csv"
+  },
+  "width": "250",
+  "height": "250",
+  "title": {
+    "text": "Change in Energy Consumption",
+    "subtitle": [
+      "Primary energy consumption (kWh) per capita (2013 = 0). Source: This World in Data",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {"calculate": "datum.China-24318.01953", "as": "China"},
+    {"calculate": "datum.Italy-30890.7793", "as": "Italy"},
+    {"calculate": "datum.Japan-42957.72656", "as": "Japan"},
+    {"calculate": "datum.Spain-33770.98047", "as": "Spain"},
+    {"calculate": "datum.United_States-81313.85938", "as": "US"}
+  ],
+  "repeat": {"layer": ["China", "Italy", "Japan", "Spain", "US"]},
+  "spec": {
+    "mark": {"type": "line", "point": true},
+    "encoding": {
+      "x": {"field": "year", "type": "temporal", "axis": {"title": "Year"}},
+      "y": {
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "scale": {"domain": [-2500, 2500]},
+        "axis": {"title": null}
+      },
+      "color": {"datum": {"repeat": "layer"}}
+    }
+  },
+  "config": {}
+}
