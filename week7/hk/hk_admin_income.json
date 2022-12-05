@@ -2,12 +2,20 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
   "height": 400,
-  "title": {
-    "text": "Map of Hong Kong Administrative Districts",
-    "anchor": "middle",
-    "color": "black"
-  },
   "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2016,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
   "layer": [
     {
       "data": {
@@ -23,9 +31,11 @@
               "format": {"property": "dataSet"}
             },
             "key": "DCDesc",
-            "fields": ["figure"]
+            "fields": ["figure", "period"]
           }
-        }
+        },
+        {"calculate": "toNumber(yearSelector)", "as": "years"},
+        {"filter": "datum.years == datum.period"}
       ],
       "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.75},
       "encoding": {
