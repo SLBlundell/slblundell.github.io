@@ -4,7 +4,7 @@
   "height": 400,
   "title": {
     "text": "Map of Hong Kong Administrative Districts",
-    "anchor": "start",
+    "anchor": "middle",
     "color": "black"
   },
   "config": {"background": "white", "view": {"stroke": "transparent"}},

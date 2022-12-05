@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "title": {
+    "text": "Map of Hong Kong Administrative Districts",
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week7/hk/stanford-tc394sc6984-geojson.json",
+        "format": {"property": "features"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.name_1",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week7/hk/data_hk_census_districts.json",
+              "format": {"property": "dataSet"}
+            },
+            "key": "DCDesc",
+            "fields": ["figure"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.75},
+      "encoding": {
+        "color": {
+          "field": "figure",
+          "legend": {
+            "title": ["Median Monthly", "Household Income", "(HKD)"],
+            "orient": "right",
+            "format": "$,.0f",
+            "direction": "vertical"
+          },
+          "type": "quantitative",
+          "scale": {"scheme": "tealblues", "reverse": false}
+        },
+        "tooltip": [
+          {"field": "properties.name_1", "title": "District"},
+          {"field": "figure", "title": "Income", "format": "$,"}
+        ]
+      }
+    }
+  ]
+}
