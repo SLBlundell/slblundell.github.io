@@ -16,7 +16,7 @@
       "field": "millions",
       "type": "quantitative",
       "title": null,
-      "axis": {"format": ""},
+      "axis": {"format": ".0f"},
       "scale": {"domain": [0, 200]}
     },
     "color": {
@@ -28,7 +28,7 @@
     },
     "tooltip": [
       {"field": "team", "title": "Team"},
-      {"field": "active", "title": "Active Payroll", "format": "$"}
+      {"field": "active", "title": "Active Payroll", "format": "$,"}
     ]
   },
   "params": [
