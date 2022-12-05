@@ -1,24 +1,4 @@
 {
-    "header": {
-        "status": {
-            "name": "Success",
-            "code": 0,
-            "description": "Query success",
-            "apiHelp": "https:\/\/www.censtatd.gov.hk\/en\/web_table.html?id=217&api_popup=1"
-        },
-        "title": "Statistics on Domestic Household Characteristics by District Council District",
-        "tablenote": [
-            "Figures presented in the above table involve the use of population figures in the compilation process. The population figures for periods after mid-2016 have been revised based on the latest population benchmark from the results of the 2021 Population Census. Figures presented in the above table have been revised accordingly.     Statistics on the latest population and household characteristics are primarily compiled based on data collected in the General Household Survey (GHS) in January to December of the year, thus largely reflecting the average profiles of the year.     The GHS covers the land-based non-institutional population, i.e. the Hong Kong Resident Population excluding inmates of institutions and persons living on board vessels.     All statistics in the District Profiles (Population and Households) dashboard are also presented in the following statistical tables to facilitate users to customise and download the relevant statistics: - Table 216 : Statistics on Demographic Characteristics by District Council District - Table 217 : Statistics on Domestic Household Characteristics by District Council District",
-            "r Revised figure"
-        ],
-        "source": "General Household Survey Household Statistics Analysis Section, Census and Statistics Department (Enquiry telephone no. : 2887 5508  Enquiry e-mail : ghs@censtatd.gov.hk)",
-        "count": {
-            "noOfRecords": 1140,
-            "started": "2022-12-05T19:00:27+00:00",
-            "finished": "2022-12-05T19:00:28+00:00",
-            "durationSeconds": 0.052113
-        }
-    },
     "dataSet": [
         {
             "DC": "",
