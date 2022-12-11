@@ -3,19 +3,14 @@
   "width": 500,
   "height": 400,
   "config": {"background": "white", "view": {"stroke": "transparent"}},
-  "params": [
-    {
-      "name": "yearSelector",
-      "value": 2021,
-      "bind": {
-        "input": "range",
-        "min": 2016,
-        "max": 2021,
-        "step": 1,
-        "name": "Year:"
-      }
-    }
-  ],
+ "title": {
+    "text": "District Inequality",
+    "subtitle": ["Median Monthly Household Income by Administrative District in 2021 ($HK). Source: HKSAR Government"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"},
+
   "layer": [
     {
       "data": {
@@ -33,16 +28,14 @@
             "key": "DCDesc",
             "fields": ["figure", "period"]
           }
-        },
-        {"calculate": "toNumber(yearSelector)", "as": "years"},
-        {"filter": "datum.years == datum.period"}
+        }
       ],
       "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.75},
       "encoding": {
         "color": {
           "field": "figure",
           "legend": {
-            "title": ["Median Monthly", "Household Income", "(HKD)"],
+            "title": null,
             "orient": "right",
             "format": "$,.0f",
             "direction": "vertical"

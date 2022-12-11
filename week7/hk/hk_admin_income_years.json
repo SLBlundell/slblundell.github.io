@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2016,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": "geoshape",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week7/hk/data_hk_census_districts.json",
+    "format": {"property": "dataSet"}
+  },
+  "transform": [
+    {"calculate": "toNumber(yearSelector)", "as": "years"},
+    {"filter": "datum.years == datum.period"},
+    {
+      "fold": [
+        "Central and Western",
+        "Wan Chai",
+        "Eastern",
+        "Southern",
+        "Yau Tsim Mong",
+        "Sham Shui Po",
+        "Kowloon City",
+        "Wong Tai Sin",
+        "Kwun Tong",
+        "Kwai Tsing",
+        "Tsuen Wan",
+        "Tsuen Wan",
+        "Tuen Mun",
+        "Yuen Long",
+        "North",
+        "Tai Po",
+        "Sha Tin",
+        "Sai Kung",
+        "Islands"
+      ],
+      "as": ["DCDesc", "figure"]
+    },
+    {
+      "lookup": "DCDesc",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week7/hk/stanford-tc394sc6984-geojson.json",
+          "format": {"property": "features"}
+        },
+        "key": "properties.name_1",
+        "fields": ["properties", "type", "geometry"]
+      }
+    }
+  ]
+}
