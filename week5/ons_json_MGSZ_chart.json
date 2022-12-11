@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week5/ons_json_MGSZ.json",
+    "format": {"type": "json", "property": "years"}
+  },
+  "transform": [{"calculate": "datum.value/100", "as": "percent"}],
+  "title": {
+    "text": "Female Unemployment rate (aged 16 and over, seasonally adjusted)",
+    "subtitle": "United Kingdom, Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "mark": {"type": "line", "color": "teal", "strokeWidth": 2, "opacity": 1},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": null},
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"format": "%"}
+    }
+  },
+  "config": {}
+}

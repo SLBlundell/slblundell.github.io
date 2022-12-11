@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week5/ons_json_LF24.json",
+    "format": {"type": "json", "property": "years"}
+  },
+  "transform": [{"calculate": "datum.value/100", "as": "percent"}],
+  "title": {
+    "text": "Employment rate (aged 16 to 64, seasonally adjusted): %",
+    "subtitle": "United Kingdom, Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "mark": {"type": "line", "color": "teal", "strokeWidth": 2, "opacity": 1},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": null},
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "scale": {"domain": [0.6, 0.8]},
+      "title": null,
+      "axis": {"format": "%"}
+    }
+  },
+  "config": {}
+}
