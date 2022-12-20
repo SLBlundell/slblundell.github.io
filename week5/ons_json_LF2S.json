@@ -8,12 +8,12 @@
         },
         "datasetId": "LMS",
         "datasetUri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatistics",
-        "date": "2022 AUG",
+        "date": "2022 SEP",
         "monthLabelStyle": "three month average",
-        "nextRelease": "13 December 2022",
-        "number": "21.6",
+        "nextRelease": "17 January 2023",
+        "number": "21.5",
         "preUnit": "",
-        "releaseDate": "2022-11-15T00:00:00.000Z",
+        "releaseDate": "2022-12-13T00:00:00.000Z",
         "sampleSize": "0",
         "source": "",
         "title": "LFS: Economic inactivity rate: UK: All: Aged 16-64: %: SA",
@@ -6209,6 +6209,16 @@
             "updateDate": "2022-11-15T00:00:00.000Z",
             "value": "21.6",
             "year": "2022"
+        },
+        {
+            "date": "2022 SEP",
+            "label": "2022 AUG-OCT",
+            "month": "September",
+            "quarter": "",
+            "sourceDataset": "LMS",
+            "updateDate": "2022-12-13T00:00:00.000Z",
+            "value": "21.5",
+            "year": "2022"
         }
     ],
     "quarters": [
@@ -8806,6 +8816,12 @@
             "label": "v85",
             "updateDate": "2022-11-15T07:00:00.000Z",
             "uri": "/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf2s/lms/previous/v85"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v86",
+            "updateDate": "2022-12-13T07:00:00.000Z",
+            "uri": "/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf2s/lms/previous/v86"
         }
     ],
     "years": [

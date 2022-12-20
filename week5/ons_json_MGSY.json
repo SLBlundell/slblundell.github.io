@@ -8,13 +8,13 @@
         },
         "datasetId": "LMS",
         "datasetUri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatistics",
-        "date": "2022 AUG",
+        "date": "2022 SEP",
         "keyNote": "UK: Aged 16 and over",
         "monthLabelStyle": "three month average",
-        "nextRelease": "13 December 2022",
-        "number": "3.7",
+        "nextRelease": "17 January 2023",
+        "number": "3.8",
         "preUnit": "",
-        "releaseDate": "2022-11-15T00:00:00.000Z",
+        "releaseDate": "2022-12-13T00:00:00.000Z",
         "sampleSize": "0",
         "source": "",
         "title": "Male unemployment rate (aged 16 and over, seasonally adjusted): %",
@@ -6210,6 +6210,16 @@
             "updateDate": "2022-11-15T00:00:00.000Z",
             "value": "3.7",
             "year": "2022"
+        },
+        {
+            "date": "2022 SEP",
+            "label": "2022 AUG-OCT",
+            "month": "September",
+            "quarter": "",
+            "sourceDataset": "LMS",
+            "updateDate": "2022-12-13T00:00:00.000Z",
+            "value": "3.8",
+            "year": "2022"
         }
     ],
     "quarters": [
@@ -8818,6 +8828,12 @@
             "label": "v85",
             "updateDate": "2022-11-15T07:00:00.000Z",
             "uri": "/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsy/lms/previous/v85"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v86",
+            "updateDate": "2022-12-13T07:00:00.000Z",
+            "uri": "/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsy/lms/previous/v86"
         }
     ],
     "years": [

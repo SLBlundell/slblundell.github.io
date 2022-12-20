@@ -39,12 +39,20 @@ h3, p{
     text-align: center;
 }
 
-.myWeek1{
+.week{
     margin: auto;
     max-width: 600px;
     background-color: rgb(255, 255, 255);
 }
 
+.chart5{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;     
+    padding: 7.5px;
+    border-top:    1px transparent  #d8d4d4;
+    border-bottom: 1px solid #d8d4d4;
+}
 
 /* Set the apperance of the class, chart */
 .chart{
@@ -54,7 +62,5 @@ h3, p{
     padding: 7.5px;
     border-top:    1px solid  #d8d4d4;
     border-bottom: 1px solid #d8d4d4;
-
-    
 }
     

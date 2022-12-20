@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week5/ons_json_MGRQ.json",
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week5/ons_json_YCBW.json",
     "format": {"type": "json", "property": "years"}
   },
   "title": {
-    "text": ["Self-employed: UK: 000s,", "Annual = 4 quarter average"],
+    "text": ["Workers with Second Jobs" , "(Thousands)"],
     "subtitle": "United Kingdom, Source: ONS",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -20,9 +20,9 @@
     "y": {
       "field": "value",
       "type": "quantitative",
-      "scale": {"domain": [2000, 6000]},
+      "scale": {"domain": [3000, 10000]},
       "title": null,
-      "axis": {"format": ".0f"}
+      "axis": {"format": ",.0f"}
     }
   },
   "config": {}

@@ -6,15 +6,15 @@
   },
   "transform": [{"calculate": "datum.value/100", "as": "percent"}],
   "title": {
-    "text": "Employment rate (aged 16 to 64, seasonally adjusted): %",
+    "text": ["Employment rate (aged 16 to" , "64, seasonally adjusted): %"],
     "subtitle": "United Kingdom, Source: ONS",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
-  "width": 300,
-  "height": 300,
+  "width": 100,
+  "height": 100,
   "mark": {"type": "line", "color": "teal", "strokeWidth": 2, "opacity": 1},
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": null},

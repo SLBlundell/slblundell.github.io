@@ -6,7 +6,7 @@
   },
   "transform": [{"calculate": "datum.value/100", "as": "percent"}],
   "title": {
-    "text": "Public Sector Employment as % of Total Employment",
+    "text": ["Public Sector Employment","% of Total Employment"],
     "subtitle": "United Kingdom, Source: ONS",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
