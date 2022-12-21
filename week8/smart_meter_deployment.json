@@ -4,11 +4,9 @@
   "data": {
     "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week8/smart_meter_deployment.csv"
   },
-  "width": "250",
-  "height": "250",
   "title": {
     "text": "Change in Smart Meter Deployment",
-    "subtitle": ["Smart meter deployment per capita (2013 = 0). Source: IEA"],
+    "subtitle": ["Smart meter deployment per capita" , "(2013 = 0). Source: IEA"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",

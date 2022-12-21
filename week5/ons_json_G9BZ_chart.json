@@ -21,7 +21,7 @@
     "y": {
       "field": "percent",
       "type": "quantitative",
-      "scale": {"domain": [0.1, 0.25]},
+      "scale": {"domain": [0.1, 0.30]},
       "title": null,
       "axis": {"format": "%"}
     }

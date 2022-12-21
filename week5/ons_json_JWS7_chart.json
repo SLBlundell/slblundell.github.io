@@ -20,7 +20,7 @@
     "y": {
       "field": "value",
       "type": "quantitative",
-      "scale": {"domain": [0, 1400]},
+      "scale": {"domain": [500, 1500]},
       "title": null,
       "axis": {"format": ".0f"}
     }

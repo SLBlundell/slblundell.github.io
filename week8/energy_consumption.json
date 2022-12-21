@@ -4,18 +4,18 @@
   "data": {
     "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week8/energy_consumption.csv"
   },
-  "width": "250",
-  "height": "250",
+
   "title": {
     "text": "Change in Energy Consumption",
     "subtitle": [
-      "Primary energy consumption (kWh) per capita (2013 = 0). Source: This World in Data",
-      ""
+      "Primary energy consumption (kWh) per capita",
+      "(2013 = 0). Source: This World in Data"
     ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
+
   },
   "transform": [
     {"calculate": "datum.China-24318.01953", "as": "China"},
@@ -32,7 +32,7 @@
       "y": {
         "field": {"repeat": "layer"},
         "type": "quantitative",
-        "scale": {"domain": [-2500, 2500]},
+        "scale": {"domain": [-2500, 2000]},
         "axis": {"title": null}
       },
       "color": {"datum": {"repeat": "layer"}}

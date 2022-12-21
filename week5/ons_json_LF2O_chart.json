@@ -21,6 +21,7 @@
       "field": "value",
       "type": "quantitative",
       "title": null,
+      "scale": {"domain": [30000, 50000]},
       "axis": {"format": ".0f"}
     }
   },

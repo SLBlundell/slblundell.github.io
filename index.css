@@ -54,6 +54,23 @@ h3, p{
     border-bottom: 1px solid #d8d4d4;
 }
 
+.chart9-1{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;     
+    padding: 7.5px;
+    border-top:    1px solid  #d8d4d4;
+    border-bottom: 1px solid #d8d4d4;
+}
+.chart9-2{
+    width: 345px;
+    margin-left: auto;
+    margin-right: auto;     
+    padding: 7.5px;
+    border-top:    1px solid  #d8d4d4;
+    border-bottom: 1px solid #d8d4d4;
+}
+
 /* Set the apperance of the class, chart */
 .chart{
     width: 600px;
