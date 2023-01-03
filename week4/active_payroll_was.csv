@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ,Unnamed: 0,Team,Code,Year,Payroll,Annual,Revenue,Adjusted_Payroll
 0,0,Washington Wizards,WAS,2021,126147247,270.97,641.0,138323.89990898824
 1,1,Washington Wizards,WAS,2020,126243515,258.811,792.0,120139.1258751574
@@ -10,3 +11,18 @@
 8,8,Washington Wizards,WAS,2013,63807197,232.957,456.0,92614.19362892024
 9,9,Washington Wizards,WAS,2012,57506990,229.594,368.0,96230.86911849852
 10,10,Washington Wizards,WAS,2011,66770575,224.939,396.0,107531.61743746164
+=======
+team,code,year,active
+Washington Wizards,WAS,2022,149909036
+Washington Wizards,WAS,2021,126147247
+Washington Wizards,WAS,2020,126243515
+Washington Wizards,WAS,2019,87153787
+Washington Wizards,WAS,2018,115917170
+Washington Wizards,WAS,2017,122840421
+Washington Wizards,WAS,2016,101659831
+Washington Wizards,WAS,2015,76328636
+Washington Wizards,WAS,2014,72952787
+Washington Wizards,WAS,2013,63807197
+Washington Wizards,WAS,2012,57506990
+Washington Wizards,WAS,2011,66770575
+>>>>>>> parent of 8e615ed (Updated team payrolls for adjustment)

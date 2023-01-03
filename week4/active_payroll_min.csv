@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ,Unnamed: 0,Team,Code,Year,Payroll,Annual,Revenue,Adjusted_Payroll
 0,0,Minnesota Timberwolves,MIN,2021,136105827,270.97,641.0,149243.75472877396
 1,1,Minnesota Timberwolves,MIN,2020,128339053,258.811,792.0,122133.33606138498
@@ -10,3 +11,18 @@
 8,8,Minnesota Timberwolves,MIN,2013,66354404,232.957,456.0,96311.38663225716
 9,9,Minnesota Timberwolves,MIN,2012,60238958,229.594,368.0,100802.48128327928
 10,10,Minnesota Timberwolves,MIN,2011,55406532,224.939,396.0,89230.23356561596
+=======
+team,code,year,active
+Minnesota Timberwolves,MIN,2022,147207825
+Minnesota Timberwolves,MIN,2021,136105827
+Minnesota Timberwolves,MIN,2020,128339053
+Minnesota Timberwolves,MIN,2019,114357931
+Minnesota Timberwolves,MIN,2018,117388804
+Minnesota Timberwolves,MIN,2017,102739777
+Minnesota Timberwolves,MIN,2016,59494555
+Minnesota Timberwolves,MIN,2015,59841104
+Minnesota Timberwolves,MIN,2014,64182806
+Minnesota Timberwolves,MIN,2013,66354404
+Minnesota Timberwolves,MIN,2012,60238958
+Minnesota Timberwolves,MIN,2011,55406532
+>>>>>>> parent of 8e615ed (Updated team payrolls for adjustment)

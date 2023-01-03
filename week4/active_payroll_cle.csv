@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ,Unnamed: 0,Team,Code,Year,Payroll,Annual,Revenue,Adjusted_Payroll
 0,0,Cleveland Cavaliers,CLE,2021,129666274,270.97,641.0,142182.60907705297
 1,1,Cleveland Cavaliers,CLE,2020,95972309,258.811,792.0,91331.6562160084
@@ -10,3 +11,18 @@
 8,8,Cleveland Cavaliers,CLE,2013,66063984,232.957,456.0,95889.85089054905
 9,9,Cleveland Cavaliers,CLE,2012,49406697,229.594,368.0,82676.02586371348
 10,10,Cleveland Cavaliers,CLE,2011,48030927,224.939,396.0,77352.08611473914
+=======
+team,code,year,active
+Cleveland Cavaliers,CLE,2022,147795778
+Cleveland Cavaliers,CLE,2021,129666274
+Cleveland Cavaliers,CLE,2020,95972309
+Cleveland Cavaliers,CLE,2019,129260620
+Cleveland Cavaliers,CLE,2018,122168064
+Cleveland Cavaliers,CLE,2017,135777082
+Cleveland Cavaliers,CLE,2016,125132604
+Cleveland Cavaliers,CLE,2015,106997466
+Cleveland Cavaliers,CLE,2014,80811761
+Cleveland Cavaliers,CLE,2013,66063984
+Cleveland Cavaliers,CLE,2012,49406697
+Cleveland Cavaliers,CLE,2011,48030927
+>>>>>>> parent of 8e615ed (Updated team payrolls for adjustment)

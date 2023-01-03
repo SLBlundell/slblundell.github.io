@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ,Unnamed: 0,Team,Code,Year,Payroll,Annual,Revenue,Adjusted_Payroll
 0,0,Phoenix Suns,PHX,2021,129978256,270.97,641.0,142524.7058565523
 1,1,Phoenix Suns,PHX,2020,126329911,258.811,792.0,120221.34427599255
@@ -10,3 +11,18 @@
 8,8,Phoenix Suns,PHX,2013,47314683,232.957,456.0,68675.81431061735
 9,9,Phoenix Suns,PHX,2012,51913298,229.594,368.0,86870.51409485369
 10,10,Phoenix Suns,PHX,2011,56292681,224.939,396.0,90657.34476333424
+=======
+team,code,year,active
+Phoenix Suns,PHX,2022,167152588
+Phoenix Suns,PHX,2021,129978256
+Phoenix Suns,PHX,2020,126329911
+Phoenix Suns,PHX,2019,98005821
+Phoenix Suns,PHX,2018,68854080
+Phoenix Suns,PHX,2017,74114136
+Phoenix Suns,PHX,2016,72521524
+Phoenix Suns,PHX,2015,63389393
+Phoenix Suns,PHX,2014,55464385
+Phoenix Suns,PHX,2013,47314683
+Phoenix Suns,PHX,2012,51913298
+Phoenix Suns,PHX,2011,56292681
+>>>>>>> parent of 8e615ed (Updated team payrolls for adjustment)

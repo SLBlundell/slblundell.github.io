@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ,Unnamed: 0,Team,Code,Year,Payroll,Annual,Revenue,Adjusted_Payroll
 0,0,New Orleans Pelicans,NOP,2021,132604966,270.97,641.0,145404.96507560555
 1,1,New Orleans Pelicans,NOP,2020,131561774,258.811,792.0,125200.22534975367
@@ -10,3 +11,18 @@
 8,8,New Orleans Pelicans,NOP,2013,62235672,232.957,456.0,90333.17318787676
 9,9,New Orleans Hornets,NOH,2012,46311220,229.594,368.0,77496.12613245782
 10,10,New Orleans Hornets,NOH,2011,54965856,224.939,396.0,88520.54066502507
+=======
+team,code,year,active
+New Orleans Pelicans,NOP,2022,146694109
+New Orleans Pelicans,NOP,2021,132604966
+New Orleans Pelicans,NOP,2020,131561774
+New Orleans Pelicans,NOP,2019,117797425
+New Orleans Pelicans,NOP,2018,99636769
+New Orleans Pelicans,NOP,2017,115907328
+New Orleans Pelicans,NOP,2016,94338640
+New Orleans Pelicans,NOP,2015,80164538
+New Orleans Pelicans,NOP,2014,68280315
+New Orleans Pelicans,NOP,2013,62235672
+New Orleans Hornets,NOH,2012,46311220
+New Orleans Hornets,NOH,2011,54965856
+>>>>>>> parent of 8e615ed (Updated team payrolls for adjustment)
