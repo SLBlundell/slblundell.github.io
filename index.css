@@ -1,20 +1,40 @@
-/* Richard Davies, Data Science for Economists */
+:root {
+    --pink: #DF9D9D;
+    --green: #C1CE8C;
+    --grey: #212528;
+    --red: #FC0000;
 
-/* This is my first proper css file */
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 
-/* Import a font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 @font-face {
     font-family: 'gzasuper';
-    src: url('gza_super/gza-super-webfont.woff2') format('woff2'),
-         url('gza_super/gza-super-webfont.woff') format('woff');
+    src: url('assets/gza_super/gza-super-webfont.woff2') format('woff2'),
+         url('assets/gza_super/gza-super-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+@font-face {
+    font-family: 'SuisseIntl-FreeTrial';
+    src: url('assets/SuisseIntl-FreeTrial/Web/Woff2/SuisseIntl-Regular-WebTrial.woff2') format('woff2'),
+         url('assets/SuisseIntl-FreeTrial/Web/Woff/SuisseIntl-Regular-WebTrial.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
 
 /* Set the background color for my page: */
 body{
@@ -25,14 +45,22 @@ body{
 
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1{
-    color:rgb(17, 17, 17);
-    font-family: 'Gza', 'Super';
-    font-size: xx-large;
+    color:var(--grey);
+    font-family: 'gzasuper';
+    font-size: 40px;
     text-align: center;
-    border-bottom: 2.5px solid #000000;
+    border-bottom: 2.5px solid var(--grey);
     padding: 5px;
 }
-    
+
+h2{
+    color:rgb(17, 17, 17);
+    font-family: 'SuisseIntl-FreeTrial';
+    font-size: 25px;
+    text-align: center;
+
+}
+
 h3, p{
     color: rgb(17, 17, 17);
     font-family: 'Roboto Mono', 'normal';
@@ -50,8 +78,8 @@ h3, p{
     margin-left: auto;
     margin-right: auto;     
     padding: 7.5px;
-    border-top:    1px transparent  #d8d4d4;
-    border-bottom: 1px solid #d8d4d4;
+    border-top:    1px transparent  var(--grey);
+    border-bottom: 1px solid var(--grey);
 }
 
 .chart9-1{
@@ -59,16 +87,16 @@ h3, p{
     margin-left: auto;
     margin-right: auto;     
     padding: 7.5px;
-    border-top:    1px solid  #d8d4d4;
-    border-bottom: 1px solid #d8d4d4;
+    border-top:    1px solid  var(--grey);
+    border-bottom: 1px solid var(--grey);
 }
 .chart9-2{
     width: 345px;
     margin-left: auto;
     margin-right: auto;     
     padding: 7.5px;
-    border-top:    1px solid  #d8d4d4;
-    border-bottom: 1px solid #d8d4d4;
+    border-top:    1px solid  var(--grey);
+    border-bottom: 1px solid var(--grey);
 }
 
 /* Set the apperance of the class, chart */
@@ -77,7 +105,7 @@ h3, p{
     margin-left: auto;
     margin-right: auto;
     padding: 7.5px;
-    border-top:    1px solid  #d8d4d4;
-    border-bottom: 1px solid #d8d4d4;
+    border-top:    1px solid  var(--grey);
+    border-bottom: 1px solid var(--grey);
 }
     

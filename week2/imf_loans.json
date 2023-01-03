@@ -15,7 +15,7 @@
   "transform": [{"calculate": "datum.Adj_Totals/1000000000", "as": "billions"}],
   "height": 300,
   "width": "container",
-  "mark": {"type": "bar", "color": "#004c97"},
+  "mark": {"type": "bar", "color": "#C1CE8C"},
   "encoding": {
     "x": {
       "field": "Year",

@@ -16,7 +16,7 @@
       },
       "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.75},
       "encoding": {
-        "color": {"value": "teal"},
+        "color": {"value": "#DF9D9D"},
         "tooltip": [{"field": "properties.name_1", "title": "District"}]
       }
     }

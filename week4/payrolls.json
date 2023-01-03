@@ -19,13 +19,8 @@
       "axis": {"format": ".0f"},
       "scale": {"domain": [0, 200]}
     },
-    "color": {
-      "field": "selectedDate",
-      "type": "ordinal",
-      "title": null,
-      "legend": null,
-      "scale": {"scheme": "tealblues"}
-    },
+    "color": {"value": "#DF9D9D"},
+    
     "tooltip": [
       {"field": "team", "title": "Team"},
       {"field": "active", "title": "Active Payroll", "format": "$,"}
