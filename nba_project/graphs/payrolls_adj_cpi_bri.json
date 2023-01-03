@@ -3,8 +3,8 @@
   "title": {
     "text": "NBA Franchise Adjusted_Payrolls",
     "subtitle": [
-      "Active Payroll per NBA franchise, adjusted for inflation and NBA League Revenues. CPI: 1982=0",
-      "Source: Spotrac, Forbes, U.S. Bureau of Labor Statistics"
+      "Active Payroll per NBA franchise, adjusted for inflation and NBA League Revenues.",
+      "Source: Spotrac, Forbes, U.S. Bureau of Labor Statistics.  CPI: 1982=0, League Revenue: 2002=0"
     ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -20,14 +20,14 @@
       "type": "quantitative",
       "title": null,
       "axis": {"format": "$,.0f"},
-      "scale": {"domain": [0, 200000]}
+      "scale": {"domain": [0, 400000]}
     },
     "color": {"value": "#DF9D9D"},
     "tooltip": [
       {"field": "Team", "title": "Team"},
       {
-        "field": "Adjusted_Payroll",
-        "title": "Active Payroll Adjusted",
+        "field": "Payroll",
+        "title": "Active Payroll non-adjusted",
         "format": "$,"
       }
     ]
@@ -35,11 +35,11 @@
   "params": [
     {
       "name": "selectedDate",
-      "value": 2022,
+      "value": 2021,
       "bind": {
         "input": "range",
         "min": 2011,
-        "max": 2022,
+        "max": 2021,
         "step": 1,
         "name": "Select Year:"
       }
@@ -345,6 +345,14 @@
         {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"aggregate": "mean", "field": "Adjusted_Payroll"},
+        "color": {"value": ""},
+        "size": {"value": 5}
+      }
     }
   ],
   "config": {}
