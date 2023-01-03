@@ -1,13 +1,12 @@
-team,code,year,active
-Minnesota Timberwolves,MIN,2022,147207825
-Minnesota Timberwolves,MIN,2021,136105827
-Minnesota Timberwolves,MIN,2020,128339053
-Minnesota Timberwolves,MIN,2019,114357931
-Minnesota Timberwolves,MIN,2018,117388804
-Minnesota Timberwolves,MIN,2017,102739777
-Minnesota Timberwolves,MIN,2016,59494555
-Minnesota Timberwolves,MIN,2015,59841104
-Minnesota Timberwolves,MIN,2014,64182806
-Minnesota Timberwolves,MIN,2013,66354404
-Minnesota Timberwolves,MIN,2012,60238958
-Minnesota Timberwolves,MIN,2011,55406532
+,Team,Code,Year,Payroll,Annual,Revenue,Adjusted Payroll
+0,Minnesota Timberwolves,MIN,2021,136105827,270.97,641.0,149243.75472877396
+1,Minnesota Timberwolves,MIN,2020,128339053,258.811,792.0,122133.33606138498
+2,Minnesota Timberwolves,MIN,2019,114357931,255.657,876.0,101053.52681952217
+3,Minnesota Timberwolves,MIN,2018,117388804,251.107,801.0,111574.9671848966
+4,Minnesota Timberwolves,MIN,2017,102739777,245.12,737.0,104610.20751028387
+5,Minnesota Timberwolves,MIN,2016,59494555,240.007,587.0,71939.60268776443
+6,Minnesota Timberwolves,MIN,2015,59841104,237.017,518.0,79257.9557811281
+7,Minnesota Timberwolves,MIN,2014,64182806,236.736,479.0,89673.85460560878
+8,Minnesota Timberwolves,MIN,2013,66354404,232.957,456.0,96311.38663225717
+9,Minnesota Timberwolves,MIN,2012,60238958,229.594,368.0,100802.48128327928
+10,Minnesota Timberwolves,MIN,2011,55406532,224.939,396.0,89230.23356561596
