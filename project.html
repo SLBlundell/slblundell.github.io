@@ -32,7 +32,13 @@
 
     <main id="main">
         <div class="wrapper">
-            <h1>The Midas Touch: What is the on-court impact of salary in the NBA?</h1>
+            <h1>The Midas Touch: What is the on-court impact of salary within the NBA?</h1>
+
+            <h2>Charts #1: NBA Salaries within the context of world sports</h1>
+            <p><div class="chart" id="Chart1"></div></p>
+
+            <h2>Charts #2: NBA Salaries over time</h1>
+            <p><div class="chart" id="Chart2"></div></p>
 
             <div class="page">
 
@@ -82,4 +88,13 @@
 
     
 </body>
-    
+
+<script>
+    //Define charts:
+    var myChart1 = "nba_project/charts/chart_1/count_contracts.json";
+    var myChart2 = "nba_project/charts/chart_2/payrolls_adj_cpi_bri.json";
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+</script>

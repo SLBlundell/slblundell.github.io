@@ -1,17 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "NBA Franchise Adjusted_Payrolls",
+    "text": "NBA franchises are spending a more of their revenue on players than ever before",
+    "font": "SuisseIntl-FreeTrial",
+    "color": "#212528",
+    "fontWeight": "normal",
+    "fontSize": 16,
     "subtitle": [
-      "Active Payroll per NBA franchise, adjusted for inflation and NBA League Revenues.",
+      "Active player salaries per NBA franchise, adjusted for inflation and NBA League Revenues.",
       "Source: Spotrac, Forbes, U.S. Bureau of Labor Statistics.  CPI: 1982=0, League Revenue: 2002=0"
     ],
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
-    "anchor": "start",
-    "color": "black"
+    "subtitleFontSize": 11,
+    "subtitleFont": "Roboto Mono",
+    "anchor": "start"
   },
-  "width": 500,
+  "width": 600,
   "height": 500,
   "encoding": {
     "x": {"field": "Code", "type": "nominal", "title": null},
