@@ -1,0 +1,63 @@
+:root {
+    --pink: #DF9D9D;
+    --green: #C1CE8C;
+    --grey: #212528;
+    --red: #FC0000;
+    --text: white;
+    --fs-18: 1.125rem;
+    --container: 69.375rem
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+@font-face {
+    font-family: 'gzasuper';
+    src: url('assets/gza_super/gza-super-webfont.woff2') format('woff2'),
+         url('assets/gza_super/gza-super-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SuisseIntl-FreeTrial';
+    src: url('assets/SuisseIntl-FreeTrial/Web/Woff2/SuisseIntl-Regular-WebTrial.woff2') format('woff2'),
+         url('assets/SuisseIntl-FreeTrial/Web/Woff/SuisseIntl-Regular-WebTrial.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Roboto Mono';
+    background-color: var(--grey);
+    color: var(--text);
+    font-size: var(--fs-18);
+    line-height: 1.56;
+}
+
+.wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--container);
+    margin-inline: auto;
+}
+
+@media (min-width: 37.5rem) {
+    /* 600px */
+    .wrapper {
+        width: calc(100% - 3.75rem)
+    }
+}

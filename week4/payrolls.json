@@ -1,8 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "NBA Franchise Payrolls",
-    "subtitle": "Active payroll per NBA franchise (USD millions). Source: Spotrac",
+    "text": "NBA Franchise Adjusted_Payrolls",
+    "subtitle": [
+      "Active Payroll per NBA franchise, adjusted for inflation and NBA League Revenues.",
+      "Source: Spotrac, Forbes, U.S. Bureau of Labor Statistics.  CPI: 1982=0, League Revenue: 2002=0"
+    ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -11,31 +14,34 @@
   "width": 500,
   "height": 500,
   "encoding": {
-    "x": {"field": "code", "type": "nominal", "title": null},
+    "x": {"field": "Code", "type": "nominal", "title": null},
     "y": {
-      "field": "millions",
+      "field": "Adjusted_Payroll",
       "type": "quantitative",
       "title": null,
-      "axis": {"format": ".0f"},
-      "scale": {"domain": [0, 200]}
+      "axis": {"format": "$,.0f"},
+      "scale": {"domain": [0, 400000]}
     },
     "color": {"value": "#DF9D9D"},
-    
     "tooltip": [
-      {"field": "team", "title": "Team"},
-      {"field": "active", "title": "Active Payroll", "format": "$,"}
+      {"field": "Team", "title": "Team"},
+      {
+        "field": "Payroll",
+        "title": "Active Payroll non-adjusted",
+        "format": "$,"
+      }
     ]
   },
   "params": [
     {
       "name": "selectedDate",
-      "value": 2022,
+      "value": 2021,
       "bind": {
         "input": "range",
         "min": 2011,
-        "max": 2022,
+        "max": 2021,
         "step": 1,
-        "name": "Select year:"
+        "name": "Select Year:"
       }
     }
   ],
@@ -45,8 +51,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_atl.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -55,8 +61,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_bkn.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -65,8 +71,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_bos.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -75,8 +81,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_cha.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -85,8 +91,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_chi.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -95,8 +101,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_cle.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -105,8 +111,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_dal.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -115,8 +121,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_den.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -125,8 +131,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_det.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -135,8 +141,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_gsw.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -145,8 +151,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_hou.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -155,8 +161,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_ind.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -165,8 +171,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_lac.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -175,8 +181,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_lal.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -185,8 +191,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_mem.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -195,8 +201,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_mia.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -205,8 +211,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_mil.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -215,8 +221,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_min.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -225,8 +231,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_nop.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -235,8 +241,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_nyk.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -245,8 +251,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_okc.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -255,8 +261,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_orl.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -265,8 +271,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_phi.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -275,8 +281,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_phx.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -285,8 +291,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_por.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -295,8 +301,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_sac.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -305,8 +311,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_sas.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -315,8 +321,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_tor.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -325,8 +331,8 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_uth.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
     },
@@ -335,10 +341,18 @@
         "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/week4/active_payroll_was.csv"
       },
       "transform": [
-        {"filter": "datum.year==selectedDate"},
-        {"calculate": "datum.active/1000000", "as": "millions"}
+        {"filter": "datum.Year==selectedDate"},
+        {"calculate": "datum.Adjusted_Payroll/1000000", "as": "millions"}
       ],
       "mark": {"type": "bar"}
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"aggregate": "mean", "field": "Adjusted_Payroll"},
+        "color": {"value": ""},
+        "size": {"value": 5}
+      }
     }
   ],
   "config": {}
