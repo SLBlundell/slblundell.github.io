@@ -32,6 +32,7 @@
           "field": "Average per year (USD)",
           "scale": {"domain": [0, 50]},
           "title": null
+          
         }
       }
     },

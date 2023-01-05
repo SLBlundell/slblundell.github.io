@@ -17,7 +17,7 @@
     "subtitleFont": "Roboto Mono",
     "anchor": "start"
   },
-  "width": 600,
+  "width": 570,
   "height": 500,
   "encoding": {
     "y": {"field": "index", "type": "ordinal", "title": null},
@@ -32,7 +32,8 @@
           "scale": {"scheme": ["#fcf6f6", "#c24444"]},
           "type": "quantitative",
           "title": "Correlation Coefficient",
-          "legend": {"direction": "horizontal", "gradientLength": 120}
+          "legend": {"direction": "horizontal", "gradientLength": 120, 
+          "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 12}
         }
       }
     },
@@ -42,7 +43,7 @@
         "text": {
           "field": "Correlation",
           "type": "quantitative",
-          "format": ".3f"
+          "format": ".2f"
         },
         "color": {
           "condition": {
