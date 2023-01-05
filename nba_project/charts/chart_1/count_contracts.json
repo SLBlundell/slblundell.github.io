@@ -44,5 +44,5 @@
       }
     }
   ],
-  "config": {}
+  "config": {"font": "Roboto Mono"}
 }

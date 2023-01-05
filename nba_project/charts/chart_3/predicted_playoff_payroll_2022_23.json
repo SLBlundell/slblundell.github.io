@@ -26,8 +26,8 @@
       "field": "Team",
       "type": "nominal",
       "sort": ["0"],
-      "title": "Team",
-      "axis": {"labelAngle": 60, "labelFontSize": 10}
+      "title": null,
+      "axis": {"labelAngle": 60, "labelFontSize": 10, "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13}
     }
   },
   "layer": [
@@ -39,7 +39,7 @@
           "type": "quantitative",
           "scale": {"domain": [80000000, 200000000]},
           "title": "Active Payroll",
-          "axis": {"titleColor": "#C1CE8C", "format": "$,.0f"}
+          "axis": {"titleColor": "#C1CE8C", "format": "$,.0f", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13}
         }
       }
     },
@@ -49,11 +49,11 @@
         "y": {
           "field": "Predicted Playoff Rating",
           "type": "quantitative",
-          "axis": {"titleColor": "#DF9D9D"}
+          "axis": {"titleColor": "#DF9D9D", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13}
         }
       }
     }
   ],
   "resolve": {"scale": {"y": "independent"}},
-  "config": {}
+  "config": {"font": "Roboto Mono"}
 }

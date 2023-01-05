@@ -42,6 +42,9 @@
 
             <h2>Chart #3: Linear Regression - Win Rating</h2>
             <p><div class="chart" id="Chart3"></div></p>
+            <p><div class="chart" id="Chart4"></p>
+            
+
 
             <input type="button" id='script' name="scriptbutton" value=" Refresh Data " onclick="goPython()">
 
@@ -127,9 +130,11 @@
     var myChart1 = "nba_project/charts/chart_1/count_contracts.json";
     var myChart2 = "nba_project/charts/chart_2/payrolls_adj_cpi_bri.json";
     var myChart3 = "nba_project/charts/chart_3/predicted_playoff_payroll_2022_23.json";
+    var myChart4 = "nba_project/charts/chart_3/correlation_heatmap.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
 </script>
