@@ -34,11 +34,44 @@
         <div class="wrapper">
             <h1>The Midas Touch: What is the on-court impact of salary within the NBA?</h1>
 
-            <h2>Charts #1: NBA Salaries within the context of world sports</h1>
+            <h2>Chart #1: NBA Salaries within the context of world sports</h1>
             <p><div class="chart" id="Chart1"></div></p>
 
-            <h2>Charts #2: NBA Salaries over time</h1>
+            <h2>Chart #2: NBA Salaries over time</h1>
             <p><div class="chart" id="Chart2"></div></p>
+
+            <h2>Chart #3: Linear Regression - Win Rating</h2>
+            <img src="nba_project\figures\win_rating_bar.jpeg" alt="Linear-Regression-Bar"> 
+
+            <input type="button" id='script' name="scriptbutton" value=" Refresh Data " onclick="goPython()">
+
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        
+            <script>
+                function goPython(){
+                    $.ajax({
+                      url: "nba_project/2023_scraper.ipynb",
+                     context: document.body
+                    }).done(function() {
+                     alert('finished python script');;
+                    });
+                }
+            </script>
+
+            <input type="button" id='script' name="scriptbutton" value=" Recalculate Rating " onclick="goPython()">
+
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        
+            <script>
+                function goPython(){
+                    $.ajax({
+                      url: "nba_project/model.ipynb",
+                     context: document.body
+                    }).done(function() {
+                     alert('finished python script');;
+                    });
+                }
+            </script>
 
             <div class="page">
 
