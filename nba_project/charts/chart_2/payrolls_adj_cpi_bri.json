@@ -22,7 +22,8 @@
     "x": { 
       "field": "Code", 
       "type": "nominal", 
-      "title": "Team"
+      "title": "Team",
+      "axis": {"labelAngle": 60, "labelFontSize": 10}
       },
 
     "y": {

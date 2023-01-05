@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "So far this season, salaries seem to matter much more in potential playoff performance",
+    "font": "SuisseIntl-FreeTrial",
+    "color": "#212528",
+    "fontWeight": "normal",
+    "fontSize": 16,
+    "subtitle": [
+      "Active NBA team salaries against predicted playoff rating for the 2022/23 season.",
+      "Predicted Playoff Rating: Source: calculations, Basketball-Reference. 1.0 = most likely to win championship.",
+      "Active Payroll: Source: HoopsHype."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleFont": "Roboto Mono",
+    "anchor": "start"
+  },
+  "width": 600,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/model_predicted_wins.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "Team",
+      "type": "nominal",
+      "sort": ["0"],
+      "title": "Team",
+      "axis": {"labelAngle": 60, "labelFontSize": 10}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"opacity": 0.7, "type": "bar", "color": "#C1CE8C", "clip": true},
+      "encoding": {
+        "y": {
+          "field": "Payroll",
+          "type": "quantitative",
+          "scale": {"domain": [80000000, 200000000]},
+          "title": "Active Payroll",
+          "axis": {"titleColor": "#C1CE8C", "format": "$,.0f"}
+        }
+      }
+    },
+    {
+      "mark": {"stroke": "#DF9D9D", "type": "line", "interpolate": "monotone"},
+      "encoding": {
+        "y": {
+          "field": "Predicted Playoff Rating",
+          "type": "quantitative",
+          "axis": {"titleColor": "#DF9D9D"}
+        }
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {}
+}
