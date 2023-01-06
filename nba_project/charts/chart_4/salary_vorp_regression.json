@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Highly paid players are typically poor value for money on the court",
+    "font": "SuisseIntl-FreeTrial",
+    "color": "#212528",
+    "fontWeight": "normal",
+    "fontSize": 16,
+    "subtitle": [
+      "Linear regression of player salary on Win Share for the 2022/23 NBA season. Source: Basketball-Reference.",
+      "Win Share (WS) is a measure of an individual player's offensive and defensive contribution to their team's wins"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleFont": "Roboto Mono",
+    "anchor": "start"
+  },
+  "width": 800,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/player_per_game_salary_2023.csv"
+  },
+  "layer": [
+    { 
+    "params": [{
+      "name": "grid",
+      "select": "interval",
+      "bind": "scales"
+    }
+  ],
+      "mark": {"type": "point", "filled": false, "color": "#DF9D9D", "fillOpacity": 1.5, "size": 30, "tooltip": {"content": "data"}},
+      "encoding": {
+        "x": {
+          "field": "2022/23",
+          "title": "Salary",
+          "type": "quantitative",
+          "axis": {"titleFont": "SuisseIntl-FreeTrial", "format": "$,.0f", "titleFontWeight": "normal", "titleFontSize": 14}
+        },
+        "y": {
+          "field": "WS",
+          "title": "Win Share",
+          "type": "quantitative",
+          "axis": {"titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 14}
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#C1CE8C"},
+      "transform": [
+        {"regression": "2022/23", "on": "WS", "method": "linear"}
+      ],
+      "encoding": {
+        "x": {"field": "2022/23", "type": "quantitative"},
+        "y": {"field": "WS", "type": "quantitative"}
+      }
+    }
+
+  ],
+  "config": {"font": "Roboto Mono"}
+}

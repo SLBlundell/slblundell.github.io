@@ -39,7 +39,7 @@
           "type": "quantitative",
           "scale": {"domain": [80000000, 200000000]},
           "title": "Active Payroll",
-          "axis": {"titleColor": "#C1CE8C", "format": "$,.0f", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13}
+          "axis": {"titleColor": "#C1CE8C", "format": "$,.0f", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 14}
         }
       }
     },
@@ -49,7 +49,7 @@
         "y": {
           "field": "Predicted Playoff Rating",
           "type": "quantitative",
-          "axis": {"titleColor": "#DF9D9D", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13}
+          "axis": {"titleColor": "#DF9D9D", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 14}
         }
       }
     }

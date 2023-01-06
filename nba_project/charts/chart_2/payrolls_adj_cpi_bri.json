@@ -23,14 +23,14 @@
       "field": "Code", 
       "type": "nominal", 
       "title": "Team",
-      "axis": {"labelAngle": 60, "labelFontSize": 10, "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13}
+      "axis": {"labelAngle": 60, "labelFontSize": 10, "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 14}
       },
 
     "y": {
       "field": "Adjusted_Payroll",
       "type": "quantitative",
       "title": "Adjusted Active Payroll",
-      "axis": {"format": "$,.0f", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13},
+      "axis": {"format": "$,.0f", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 14},
       "scale": {"domain": [0, 400000]}
     },
     "color": {"value": "#DF9D9D"},
