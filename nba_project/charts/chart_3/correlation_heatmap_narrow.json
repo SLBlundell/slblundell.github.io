@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/correlations_playoff.csv"
+  },
+  "title": {
+    "text": ["Correlation between filtered variables within Linear", "Regression Model"],
+    "font": "SuisseIntl-FreeTrial",
+    "color": "#212528",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "subtitle": [
+      "Source: calculations, Basketball-Reference, HoopsHype"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleFont": "Roboto Mono",
+    "anchor": "start"
+  },
+  "width": 300,
+  "height": 300,
+  "encoding": {
+    "y": {"field": "index", "type": "ordinal", "title": null},
+    "x": {"field": "Variable", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}}
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "color": {
+          "field": "Correlation",
+          "scale": {"scheme": ["#fcf6f6", "#c24444"]},
+          "type": "quantitative",
+          "title": null,
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {
+          "field": "Correlation",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum['Correlation'] < 0.4",
+            "value": "#414447"
+
+          },
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {"grid": true, "tickBand": "extent", "labelFont": "Roboto Mono", "labelFontSize": 10},
+    "font": "Roboto Mono"
+  }
+}

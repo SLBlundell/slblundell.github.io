@@ -39,6 +39,7 @@ html {
 
 }
 
+
 body{
     margin: 0;
     font-family: 'Roboto Mono';
@@ -52,6 +53,33 @@ body{
     width: calc(100% - 2rem);
     max-width: var(--container);
     margin-inline: auto;
+    text-align: center;
+
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+.figures {
+    background-color: white;
+    width: 500%;
+    margin-left: -200%;
+    padding: 15px;
+    color: #212528;
 }
 
 @media (min-width: 37.5rem) {
@@ -64,7 +92,7 @@ body{
 h1{
     color: var(--text);
     font-family: 'gzasuper';
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     border-bottom: 2.5px solid var(--text);
     padding: 5px;
@@ -75,6 +103,7 @@ h2{
     font-family: 'SuisseIntl-FreeTrial';
     font-size: 25px;
     text-align: center;
+    border-bottom: 2.5px solid var(--text);
 }
 
 h3, p{
@@ -82,3 +111,64 @@ h3, p{
     font-family: 'Roboto Mono', 'normal';
     text-align: center;
 }
+
+/* HEADER */
+
+.header {
+    position: relative;
+    z-index: 1;
+    margin-block-start: 20px;
+  }
+  
+  .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 10px 25px;
+  }
+  
+  .header__home {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+    line-height: 1;
+    color: var(--text);
+    text-decoration: none;
+    flex: 1 0 100%;
+    font-family: 'SuisseIntl-FreeTrial';
+  }
+  
+
+  .header__social:hover > svg > path {
+    fill: var(--green);
+  }
+  
+  @media (min-width: 37.5em) {
+    .header {
+      margin-block-start: 30px;
+    }
+  
+    .header__nav {
+      justify-content: flex-start;
+      align-items: center;
+      text-align: left;
+      gap: 32px;
+    }
+  
+    .header__home {
+      flex: 0 1 auto;
+      margin-inline-end: auto;
+    }
+  }
+  
+  @media (min-width: 62.5em) {
+    .header {
+      margin-block-start: 40px;
+      margin-block-end: 127px;
+    }
+  
+    .header__nav {
+      padding-right: 30px;
+    }
+  }
+  

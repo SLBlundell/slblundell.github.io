@@ -1,23 +1,23 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "So far this season, salaries seem to matter much more in potential playoff performance",
+    "text": ["So far this season, salaries seem to", "matter much more in potential playoff performance"],
     "font": "SuisseIntl-FreeTrial",
     "color": "#212528",
     "fontWeight": "normal",
-    "fontSize": 16,
+    "fontSize": 12,
     "subtitle": [
-      "Active NBA team salaries against predicted playoff rating for the 2022/23 season.",
-      "Predicted Playoff Rating: Source: calculations, Basketball-Reference. 1.0 = most likely to win championship.",
+      "Active NBA team salaries against predicted", "playoff rating for the 2022/23 season.",
+      "Predicted Playoff Rating: Source: calculations," ,"Basketball-Reference.", "1.0 = most likely to win championship.",
       "Active Payroll: Source: HoopsHype."
     ],
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 11,
+    "subtitleFontSize": 10,
     "subtitleFont": "Roboto Mono",
     "anchor": "start"
   },
-  "width": 600,
-  "height": 600,
+  "width": 200,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/model_predicted_wins.csv"
   },
@@ -27,7 +27,7 @@
       "type": "nominal",
       "sort": ["0"],
       "title": null,
-      "axis": {"labelAngle": 60, "labelFontSize": 10}
+      "axis": {"labelAngle": 60, "labelFontSize": 8}
     }
   },
   "layer": [
@@ -39,7 +39,7 @@
           "type": "quantitative",
           "scale": {"domain": [80000000, 200000000]},
           "title": "Active Payroll",
-          "axis": {"titleColor": "#C1CE8C", "format": "$,.0f", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13}
+          "axis": {"titleColor": "#C1CE8C", "format": "$,.0f", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 10}
         }
       }
     },
@@ -49,7 +49,7 @@
         "y": {
           "field": "Predicted Playoff Rating",
           "type": "quantitative",
-          "axis": {"titleColor": "#DF9D9D", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 13}
+          "axis": {"titleColor": "#DF9D9D", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 10}
         }
       }
     }

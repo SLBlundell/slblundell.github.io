@@ -60,11 +60,11 @@
 
     "title": {
 
-    "text": "Unemployment rate (25-49)",
+    "text": "25-49 year old unemploymment rate",
 
     "fontSize" : 15,
 
-    "subtitle": "United Kingdom seasonally adjusted",
+    "subtitle": "United Kingdom: Seasonally Adjusted - Source: ONS",
 
     "subtitleFontStyle":"italic",
 

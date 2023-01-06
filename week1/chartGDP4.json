@@ -13,9 +13,9 @@
     {"filter": "datum.year<maxYear"}
   ],
   "title": {
-    "text": "GDP per capita - by quarter",
+    "text": "Quarterly GDP per capita",
     "fontSize" : 15,
-    "subtitle": "At current prices (£). Source: ONS",
+    "subtitle": "United Kingdom: At current prices (£GBP) - Source: ONS",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",

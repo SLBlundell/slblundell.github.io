@@ -1,140 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Title for the page -->
+      <title>The role of Salary within the NBA</title>
+      <!-- Link to my style sheet, fonts -->
+      <link rel="stylesheet" href="project.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+      <!--The next three lines allow the Vega embed-->
+      <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+   </head>
 
+   <body>
+    <!-- CONDITIONAL SCRIPT TO EMBED BASED ON SCREEN WIDTH -->
+    <script>
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    // Find the current screen width:
+    let width = screen.width;
     
-    <!-- Title for the page -->
-    <title>The role of Salary within the NBA</title>
+    // Use an if function to pick the approprite visualisation:
+    if (width > 450) {
+        var myChart1 = "nba_project/charts/chart_1/count_contracts.json";
+      var myChart2 = "nba_project/charts/chart_2/payrolls_adj_cpi_bri.json";
+      var myChart3 = "nba_project/charts/chart_3/correlation_heatmap.json";
+      var myChart4 = "nba_project/charts/chart_3/predicted_playoff_payroll_2022_23.json";
+    } else {
+        var myChart1 = "nba_project/charts/chart_1/count_contracts_narrow.json";
+        var myChart2 = "nba_project/charts/chart_2/payrolls_adj_cpi_bri_narrow.json";
+        var myChart3 = "nba_project/charts/chart_3/correlation_heatmap_narrow.json";
+        var myChart4 = "nba_project/charts/chart_3/predicted_playoff_payroll_2022_23_narrow.json";
+    }
+    
+        
+    </script>
+    <!-- END - CONDITIONAL SCRIPT TO EMBED BASED ON SCREEN WIDTH --> 
 
-    <a href="index.html">Data Science Projects</a> 
-    <a href="project.html">The role of Salary within the NBA</a> 
-
-    <!-- Link to my style sheet, fonts -->
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-
-    <!--The next three lines allow the Vega embed-->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-</head>
-
-
-<body>
     <header class="header">
-        Sam Blundell: Data Science for Economists
+      <h2 class="visually-hidden">Header</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="/" class="header__home">
+            Sam Blundell: Data Science for Economists
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+          <a href="https://github.com/SLBlundell" class="header__social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              aria-labelledby="socialGitHub"
+              role="img"
+            >
+              <title id="socialGitHub">GitHub</title>
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sam-blundell-7608b7196/" class="header__social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              aria-labelledby="socialLinkedIn"
+              role="img"
+            >
+              <title id="socialLinkedIn">LinkedIn</title>
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
     </header>
 
-    <main id="main">
-        <div class="wrapper">
-            <h1>The Midas Touch: What is the on-court impact of salary within the NBA?</h1>
-
-            <h2>Chart #1: NBA Salaries within the context of world sports</h1>
-            <p><div class="chart" id="Chart1"></div></p>
-
-            <h2>Chart #2: NBA Salaries over time</h1>
-            <p><div class="chart" id="Chart2"></div></p>
-
-            <h2>Chart #3: Linear Regression - Win Rating</h2>
-            <p><div class="chart" id="Chart3"></div></p>
-            <p><div class="chart" id="Chart4"></p>
-            
-
-
-            <input type="button" id='script' name="scriptbutton" value=" Refresh Data " onclick="goPython()">
-
-            <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        
-            <script>
-                function goPython(){
-                    $.ajax({
-                      url: "nba_project/2023_scraper.ipynb",
-                     context: document.body
-                    }).done(function() {
-                     alert('finished python script');;
-                    });
-                }
-            </script>
-
-            <input type="button" id='script' name="scriptbutton" value=" Recalculate Rating " onclick="goPython()">
-
-            <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        
-            <script>
-                function goPython(){
-                    $.ajax({
-                      url: "nba_project/model.ipynb",
-                     context: document.body
-                    }).done(function() {
-                     alert('finished python script');;
-                    });
-                }
-            </script>
+      <main id="main">
+         <div class="wrapper">
+         <h1>The Midas Touch:<br>What is the on-court impact of salary within the NBA?</h1>
+         <p><img src="assets\mj_layup_crop.jpg" atl="Michael Jordan"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quos dolor cumque aperiam illo incidunt consequatur sit ab, nobis architecto tenetur explicabo tempore repudiandae reprehenderit rem laborum ducimus quaerat sint.</p>
+         <h2>Chart #1: NBA Salaries within the context of world sports</h2>
+         <div class="figures"><div class="chart" id="Chart1"></div></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
+        <h2>Chart #2: NBA Salaries over time</h2> 
+        <div class="figures"><div class="chart" id="Chart2"></div></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
+        <h2>Chart #3: Linear Regression - Win Rating</h2>
+        <div class="figures"><div class="chart" id="Chart3"></div></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
+        <div class="figures"><div class="chart" id="Chart4"></div></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
 
             <div class="page">
+               <h1 data-splitting>ScrollOut + Splitting.js</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
+               <h1 data-splitting>Triggering Splitting Animations on Scroll</h1>
+               <p>Vestibulum nunc massa, gravida quis porta nec, feugiat id metus. Nunc ac arcu dolor, quis vestibulum leo. Cras viverra mollis ipsum, non rhoncus lectus aliquam et. Morbi faucibus purus sit amet lacus aliquet elementum. Donec sit amet posuere enim. Cras in eros id tortor fringilla ultricies. Mauris faucibus ullamcorper velit, pulvinar varius odio eleifend eu. Quisque id odio metus. Morbi adipiscing ultricies posuere. Pellentesque elementum porttitor eros in molestie. Maecenas ut leo quis nisi tempor tincidunt.</p>
+               <p>Donec nunc ligula, vulputate quis mollis eu, interdum quis libero. Donec nulla ante, facilisis sit amet vulputate at, tincidunt a velit. Maecenas vestibulum, nulla sed tincidunt viverra, lorem turpis aliquam urna, ut pretium orci purus consequat augue. Etiam a enim orci, vitae pulvinar odio. In elit urna, tincidunt a pellentesque et, scelerisque at nibh. Sed nec est sapien. Aliquam ullamcorper eros eu quam ultrices vel faucibus eros interdum. Etiam mattis eleifend sapien, eu iaculis massa feugiat sed. Aliquam erat volutpat. Vivamus facilisis ultricies eros, a pretium purus mollis id. Sed dapibus elit ut neque rutrum dignissim. Nulla eros nisl, venenatis quis rhoncus sit amet, molestie nec nisl. Pellentesque vel neque sapien, et sagittis nulla.</p>
+               <h1 data-splitting>Add a <code>transition</code> to your splits (<code>.char</code> for example)</h1>
+               <p>Aliquam eu iaculis mauris. Etiam arcu lectus, imperdiet sit amet volutpat vitae, commodo sed nibh. Fusce faucibus tempor cursus. Donec ut ligula tortor. Maecenas malesuada, diam vitae pharetra dictum, erat ante iaculis risus, sed sollicitudin nisl nisl vel metus. Nulla libero augue, convallis nec luctus id, iaculis nec urna. Cras vitae mi ut augue ultricies tempus.</p>
+               <p>Vestibulum euismod vehicula sollicitudin. Duis nibh justo, rhoncus ac ullamcorper nec, rutrum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum varius posuere nisi sed aliquet. Etiam dolor nisi, placerat vel congue tempus, posuere sed erat. Phasellus turpis eros, molestie sed consequat in, pretium at erat. In sed faucibus metus. Vestibulum fermentum libero nec eros fermentum dapibus. Duis nec libero eros. Pellentesque magna ligula, sagittis dictum fringilla at, posuere porttitor sem. Donec aliquam, ipsum quis pulvinar dapibus, augue sem viverra sapien, nec tempus odio nulla ac metus. Nunc ut augue mi, nec consequat urna.</p>
+               <h1 data-splitting>Target <code>[data-scroll="out"]</code> for the default state</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
+               <p>Vestibulum nunc massa, gravida quis porta nec, feugiat id metus. Nunc ac arcu dolor, quis vestibulum leo. Cras viverra mollis ipsum, non rhoncus lectus aliquam et. Morbi faucibus purus sit amet lacus aliquet elementum. Donec sit amet posuere enim. Cras in eros id tortor fringilla ultricies. Mauris faucibus ullamcorper velit, pulvinar varius odio eleifend eu. Quisque id odio metus. Morbi adipiscing ultricies posuere. Pellentesque elementum porttitor eros in molestie. Maecenas ut leo quis nisi tempor tincidunt.</p>
+               <h1 data-splitting>That's about it!</h1>
+               <p>Donec nunc ligula, vulputate quis mollis eu, interdum quis libero. Donec nulla ante, facilisis sit amet vulputate at, tincidunt a velit. Maecenas vestibulum, nulla sed tincidunt viverra, lorem turpis aliquam urna, ut pretium orci purus consequat augue. Etiam a enim orci, vitae pulvinar odio. In elit urna, tincidunt a pellentesque et, scelerisque at nibh. Sed nec est sapien. Aliquam ullamcorper eros eu quam ultrices vel faucibus eros interdum. Etiam mattis eleifend sapien, eu iaculis massa feugiat sed. Aliquam erat volutpat. Vivamus facilisis ultricies eros, a pretium purus mollis id. Sed dapibus elit ut neque rutrum dignissim. Nulla eros nisl, venenatis quis rhoncus sit amet, molestie nec nisl. Pellentesque vel neque sapien, et sagittis nulla.</p>
+               <p>Aliquam eu iaculis mauris. Etiam arcu lectus, imperdiet sit amet volutpat vitae, commodo sed nibh. Fusce faucibus tempor cursus. Donec ut ligula tortor. Maecenas malesuada, diam vitae pharetra dictum, erat ante iaculis risus, sed sollicitudin nisl nisl vel metus. Nulla libero augue, convallis nec luctus id, iaculis nec urna. Cras vitae mi ut augue ultricies tempus.</p>
+               <h1 data-splitting>For real. It's easy!</h1>
+               <p>Vestibulum euismod vehicula sollicitudin. Duis nibh justo, rhoncus ac ullamcorper nec, rutrum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum varius posuere nisi sed aliquet. Etiam dolor nisi, placerat vel congue tempus, posuere sed erat. Phasellus turpis eros, molestie sed consequat in, pretium at erat. In sed faucibus metus. Vestibulum fermentum libero nec eros fermentum dapibus. Duis nec libero eros. Pellentesque magna ligula, sagittis dictum fringilla at, posuere porttitor sem. Donec aliquam, ipsum quis pulvinar dapibus, augue sem viverra sapien, nec tempus odio nulla ac metus. Nunc ut augue mi, nec consequat urna.</p>
+            </div>
+         </div>
+      </main>
 
-                <h1 data-splitting>ScrollOut + Splitting.js</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
-            
-                <h1 data-splitting>Triggering Splitting Animations on Scroll</h1>
-            
-                <p>Vestibulum nunc massa, gravida quis porta nec, feugiat id metus. Nunc ac arcu dolor, quis vestibulum leo. Cras viverra mollis ipsum, non rhoncus lectus aliquam et. Morbi faucibus purus sit amet lacus aliquet elementum. Donec sit amet posuere enim. Cras in eros id tortor fringilla ultricies. Mauris faucibus ullamcorper velit, pulvinar varius odio eleifend eu. Quisque id odio metus. Morbi adipiscing ultricies posuere. Pellentesque elementum porttitor eros in molestie. Maecenas ut leo quis nisi tempor tincidunt.</p>
-            
-                <p>Donec nunc ligula, vulputate quis mollis eu, interdum quis libero. Donec nulla ante, facilisis sit amet vulputate at, tincidunt a velit. Maecenas vestibulum, nulla sed tincidunt viverra, lorem turpis aliquam urna, ut pretium orci purus consequat augue. Etiam a enim orci, vitae pulvinar odio. In elit urna, tincidunt a pellentesque et, scelerisque at nibh. Sed nec est sapien. Aliquam ullamcorper eros eu quam ultrices vel faucibus eros interdum. Etiam mattis eleifend sapien, eu iaculis massa feugiat sed. Aliquam erat volutpat. Vivamus facilisis ultricies eros, a pretium purus mollis id. Sed dapibus elit ut neque rutrum dignissim. Nulla eros nisl, venenatis quis rhoncus sit amet, molestie nec nisl. Pellentesque vel neque sapien, et sagittis nulla.</p>
-            
-                <h1 data-splitting>Add a <code>transition</code> to your splits (<code>.char</code> for example)</h1>
-            
-                <p>Aliquam eu iaculis mauris. Etiam arcu lectus, imperdiet sit amet volutpat vitae, commodo sed nibh. Fusce faucibus tempor cursus. Donec ut ligula tortor. Maecenas malesuada, diam vitae pharetra dictum, erat ante iaculis risus, sed sollicitudin nisl nisl vel metus. Nulla libero augue, convallis nec luctus id, iaculis nec urna. Cras vitae mi ut augue ultricies tempus.</p>
-            
-                <p>Vestibulum euismod vehicula sollicitudin. Duis nibh justo, rhoncus ac ullamcorper nec, rutrum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum varius posuere nisi sed aliquet. Etiam dolor nisi, placerat vel congue tempus, posuere sed erat. Phasellus turpis eros, molestie sed consequat in, pretium at erat. In sed faucibus metus. Vestibulum fermentum libero nec eros fermentum dapibus. Duis nec libero eros. Pellentesque magna ligula, sagittis dictum fringilla at, posuere porttitor sem. Donec aliquam, ipsum quis pulvinar dapibus, augue sem viverra sapien, nec tempus odio nulla ac metus. Nunc ut augue mi, nec consequat urna.</p>
-            
-                <h1 data-splitting>Target <code>[data-scroll="out"]</code> for the default state</h1>
-            
-            
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
-            
-                <p>Vestibulum nunc massa, gravida quis porta nec, feugiat id metus. Nunc ac arcu dolor, quis vestibulum leo. Cras viverra mollis ipsum, non rhoncus lectus aliquam et. Morbi faucibus purus sit amet lacus aliquet elementum. Donec sit amet posuere enim. Cras in eros id tortor fringilla ultricies. Mauris faucibus ullamcorper velit, pulvinar varius odio eleifend eu. Quisque id odio metus. Morbi adipiscing ultricies posuere. Pellentesque elementum porttitor eros in molestie. Maecenas ut leo quis nisi tempor tincidunt.</p>
-            
-            
-                <h1 data-splitting>That's about it!</h1>
-            
-                <p>Donec nunc ligula, vulputate quis mollis eu, interdum quis libero. Donec nulla ante, facilisis sit amet vulputate at, tincidunt a velit. Maecenas vestibulum, nulla sed tincidunt viverra, lorem turpis aliquam urna, ut pretium orci purus consequat augue. Etiam a enim orci, vitae pulvinar odio. In elit urna, tincidunt a pellentesque et, scelerisque at nibh. Sed nec est sapien. Aliquam ullamcorper eros eu quam ultrices vel faucibus eros interdum. Etiam mattis eleifend sapien, eu iaculis massa feugiat sed. Aliquam erat volutpat. Vivamus facilisis ultricies eros, a pretium purus mollis id. Sed dapibus elit ut neque rutrum dignissim. Nulla eros nisl, venenatis quis rhoncus sit amet, molestie nec nisl. Pellentesque vel neque sapien, et sagittis nulla.</p>
-            
-                <p>Aliquam eu iaculis mauris. Etiam arcu lectus, imperdiet sit amet volutpat vitae, commodo sed nibh. Fusce faucibus tempor cursus. Donec ut ligula tortor. Maecenas malesuada, diam vitae pharetra dictum, erat ante iaculis risus, sed sollicitudin nisl nisl vel metus. Nulla libero augue, convallis nec luctus id, iaculis nec urna. Cras vitae mi ut augue ultricies tempus.</p>
-            
-            
-            
-                <h1 data-splitting>For real. It's easy!</h1>
-            
-                <p>Vestibulum euismod vehicula sollicitudin. Duis nibh justo, rhoncus ac ullamcorper nec, rutrum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum varius posuere nisi sed aliquet. Etiam dolor nisi, placerat vel congue tempus, posuere sed erat. Phasellus turpis eros, molestie sed consequat in, pretium at erat. In sed faucibus metus. Vestibulum fermentum libero nec eros fermentum dapibus. Duis nec libero eros. Pellentesque magna ligula, sagittis dictum fringilla at, posuere porttitor sem. Donec aliquam, ipsum quis pulvinar dapibus, augue sem viverra sapien, nec tempus odio nulla ac metus. Nunc ut augue mi, nec consequat urna.</p>
-                
-                </div>            
+      <footer class="footer">
+      </footer>
+   </body>
+   <script>
+      //Define charts:
 
-        </div>
-    </main>
-
-    <footer class="footer">
-
-    </footer>
-
-    
-</body>
-
-<script>
-    //Define charts:
-    var myChart1 = "nba_project/charts/chart_1/count_contracts.json";
-    var myChart2 = "nba_project/charts/chart_2/payrolls_adj_cpi_bri.json";
-    var myChart3 = "nba_project/charts/chart_3/predicted_playoff_payroll_2022_23.json";
-    var myChart4 = "nba_project/charts/chart_3/correlation_heatmap.json";
-
-    // Embed charts:
-    vegaEmbed('#Chart1', myChart1);
-    vegaEmbed('#Chart2', myChart2);
-    vegaEmbed('#Chart3', myChart3);
-    vegaEmbed('#Chart4', myChart4);
-</script>
+      
+      // Embed charts:
+      vegaEmbed('#Chart1', myChart1);
+      vegaEmbed('#Chart2', myChart2);
+      vegaEmbed('#Chart3', myChart3);
+      vegaEmbed('#Chart4', myChart4);
+   </script>

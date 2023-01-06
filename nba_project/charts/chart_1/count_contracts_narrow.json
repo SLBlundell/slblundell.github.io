@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 250,
+  "height": 180,
+  "background": "white",
+  "title": {
+    "text": ["The NBA is filled with the world's", "most highly valued stars"],
+    "font": "SuisseIntl-FreeTrial",
+    "color": "#212528",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "subtitle": [
+      "Number of contracts within the world's top", "100 most valuable athlete contracts by sport",
+      "Source: Wikipedia, Forbes"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleFont": "Roboto Mono",
+    "anchor": "start"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/charts/chart_1/sports_contracts.csv"
+  },
+  "encoding": {"y": {"field": "Sport", "type": "nominal", "axis": null}},
+  "layer": [
+    {
+      "mark": {"type": "bar", "color": "#C1CE8C"},
+      "encoding": {
+        "x": {
+          "aggregate": "count",
+          "field": "Average per year (USD)",
+          "scale": {"domain": [0, 50]},
+          "title": null
+          
+        }
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "x": 5, "font": "Roboto Mono", "fontSize": 10},
+      "encoding": {
+        "text": {"field": "Sport"},
+        "detail": {"aggregate": "count"},
+        "color": {"value": "#212528"}
+      }
+    }
+  ],
+  "config": {"font": "Roboto Mono"}
+}
