@@ -118,6 +118,8 @@ h3, p{
     position: relative;
     z-index: 1;
     margin-block-start: 20px;
+    background-color: var(--grey);
+    padding: 10px;
   }
   
   .header__nav {
@@ -126,6 +128,8 @@ h3, p{
     justify-content: center;
     text-align: center;
     gap: 10px 25px;
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid var(--text);
   }
   
   .header__home {
@@ -144,10 +148,7 @@ h3, p{
   }
   
   @media (min-width: 37.5em) {
-    .header {
-      margin-block-start: 30px;
-    }
-  
+
     .header__nav {
       justify-content: flex-start;
       align-items: center;
@@ -162,13 +163,18 @@ h3, p{
   }
   
   @media (min-width: 62.5em) {
-    .header {
-      margin-block-start: 40px;
-      margin-block-end: 127px;
-    }
+
   
     .header__nav {
       padding-right: 30px;
     }
   }
-  
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  .sticky + .content {
+    padding-top: 102px;
+  }
