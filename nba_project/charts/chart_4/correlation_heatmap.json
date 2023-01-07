@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/chart_4_correlations.csv"
+  },
+  "title": {
+    "text": "Correlation between filtered variables within Linear Regression Model",
+    "font": "SuisseIntl-FreeTrial",
+    "color": "#212528",
+    "fontWeight": "normal",
+    "fontSize": 16,
+    "subtitle": [
+      "Source: calculations, Basketball-Reference, HoopsHype"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleFont": "Roboto Mono",
+    "anchor": "start"
+  },
+  "width": 570,
+  "height": 500,
+  "encoding": {
+    "y": {"field": "index", "type": "ordinal", "title": null},
+    "x": {"field": "Variable", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}}
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "color": {
+          "field": "Correlation",
+          "scale": {"scheme": ["#e9f6b2", "#5c6245"]},
+          "type": "quantitative",
+          "title": "Correlation Coefficient",
+          "legend": {"direction": "horizontal", "gradientLength": 120, 
+          "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 12}
+        }
+      }
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {
+          "field": "Correlation",
+          "type": "quantitative",
+          "format": ".2f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum['Correlation'] < 0.4",
+            "value": "#414447"
+          },
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {"grid": true, "tickBand": "extent", "labelFont": "Roboto Mono"},
+    "font": "Roboto Mono"
+  }
+}
