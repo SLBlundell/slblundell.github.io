@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "With salaries within the league skewing dramatically in favour of the highest paid",
+    "font": "SuisseIntl-FreeTrial",
+    "color": "#212528",
+    "fontWeight": "normal",
+    "fontSize": 16,
+    "subtitle": [
+      "Distribution of NBA salaries for the 2022/23 season, with median salary highlighted",
+      "Source: HoopsHype"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleFont": "Roboto Mono",
+    "anchor": "start"
+  },
+  "width": 650,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/chart_4_player_data.csv"
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "bin": true,
+          "field": "Salary 2022/23",
+          "axis": {
+            "title": "Salary",
+            "titleFontWeight": "normal",
+            "titleFont": "SuisseIntl-FreeTrial",
+            "format": "$,.0f"
+          }
+        },
+        "y": {
+          "aggregate": "count",
+          "axis": {
+            "title": "Count",
+            "titleFontWeight": "normal",
+            "titleFont": "SuisseIntl-FreeTrial"
+          }
+        },
+        "color": {"value": "#DF9D9D"}
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"aggregate": "median", "field": "Salary 2022/23"},
+        "color": {"value": "#C1CE8C"},
+        "size": {"value": 5}
+      }
+    }
+  ],
+  "config": {"font": "Roboto Mono"}
+}

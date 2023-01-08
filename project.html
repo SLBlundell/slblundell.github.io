@@ -30,6 +30,7 @@
       var myChart4 = "nba_project/charts/chart_3/predicted_playoff_payroll_2022_23.json";
       var myChart5 = "nba_project/charts/chart_4/salary_vorp_regression.json";
       var myChart6 = "nba_project/charts/chart_4/correlation_heatmap.json"
+      var myChart7 = "nba_project/charts/chart_1/salary_distribution.json"
     } else {
         var myChart1 = "nba_project/charts/chart_1/count_contracts_narrow.json";
         var myChart2 = "nba_project/charts/chart_2/payrolls_adj_cpi_bri_narrow.json";
@@ -90,14 +91,18 @@
       <main id="main">
          <div class="wrapper">
          <h1>The Midas Touch:<br>What is the on-court impact of salary within the NBA?</h1>
-         <p><img src="assets/mj_layup_crop.jpg" atl="Michael Jordan"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quos dolor cumque aperiam illo incidunt consequatur sit ab, nobis architecto tenetur explicabo tempore repudiandae reprehenderit rem laborum ducimus quaerat sint.</p>
-         <h2>Chart #1: NBA Salaries within the context of world sports</h2>
+         <p><img src="assets/mj_layup_crop.jpg" atl="Michael Jordan"><br>During the 1997/98 NBA season, Michael Jordan earned $33,140,000 ($61 million adjusted for inflation) whilst playing in a Chicago Bulls jersey for the last time. Within the context of today's NBA, where 30 players will earn more than $33m this year, this sounds like a steal for the world’s most valuable athlete. However, this figure balloons to astronomical proportions when considering the fact that the entire NBA was worth 14x less than it is today. MJ’s salary was so disproportionately large compared to his peers that he was paid more than the combined payrolls of 295 players on 19 teams that season. The NBA infamously instituted a max salary cap the following season to prevent such occurrences in the future.</p>
+         <h2>NBA Salaries within the context of world sports</h2>
+         <p>Whilst the days of league transcending salaries for individual players may be over, the NBA is uniquely filled with highly paid stars compared to other sports. Even within the NBA, the salaries of the league’s premier stars outstrip the majority of players by considerable amounts.</p>
          <div class="figures"><div class="chart" id="Chart1"></div></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
+         <div class="figures"><div class="chart" id="Chart7"></div></div>
+        <p>What is unique about basketball that causes this type of salary inequality? If we narrow the scope of this question to focus on-the-court, can the impact of individual stars on playoff performance, and title contentions, be worth this type of salary premium? Did MJ really generate more value in the game than 19 entire rosters?</p>
         <h2>Chart #2: NBA Salaries over time</h2> 
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, expedita dolores. Ducimus, dolores totam vel dolore nobis doloribus impedit officiis ullam veniam atque fugit voluptate cum corporis vero. Quidem, quo.</p>
         <div class="figures"><div class="chart" id="Chart2"></div></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
         <h2>Chart #3: Linear Regression - Win Rating</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, facere harum aut, distinctio quaerat quisquam excepturi pariatur magni illo esse ad voluptates reprehenderit necessitatibus minima nostrum eum consequuntur veniam accusamus.</p>
         <div class="figures"><div class="chart" id="Chart3"></div></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. Mauris vehicula cursus risus id luctus. Curabitur accumsan venenatis nibh, non egestas ipsum vulputate ac. Vivamus consectetur dolor sit amet enim aliquet eu scelerisque ipsum hendrerit. Donec lobortis suscipit vestibulum. Nullam luctus pellentesque risus in ullamcorper. Nam neque nunc, mattis vitae ornare ut, feugiat a erat. Ut tempus iaculis augue vel pellentesque.</p>
         <div class="figures"><div class="chart" id="Chart4"></div></div>
@@ -122,4 +127,5 @@
       vegaEmbed('#Chart4', myChart4);
       vegaEmbed('#Chart5', myChart5);
       vegaEmbed('#Chart6', myChart6);
+      vegaEmbed('#Chart7', myChart7);
    </script>
