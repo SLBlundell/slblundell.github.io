@@ -46,7 +46,7 @@
   "params": [
     {
       "name": "selectedDate",
-      "value": 2021,
+      "value": 2011,
       "bind": {
         "input": "range",
         "min": 2011,
