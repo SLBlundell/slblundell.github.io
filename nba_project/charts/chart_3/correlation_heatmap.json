@@ -9,9 +9,7 @@
     "color": "#212528",
     "fontWeight": "normal",
     "fontSize": 16,
-    "subtitle": [
-      "Source: calculations, Basketball-Reference, HoopsHype"
-    ],
+    "subtitle": ["Source: calculations, Basketball-Reference, HoopsHype"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "subtitleFont": "Roboto Mono",
@@ -21,7 +19,18 @@
   "height": 500,
   "encoding": {
     "y": {"field": "index", "type": "ordinal", "title": null},
-    "x": {"field": "Variable", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}}
+    "x": {
+      "field": "Variable",
+      "type": "ordinal",
+      "title": null,
+      "axis": {"labelAngle": 0}
+    },
+    "tooltip": [
+      {"field": "index", "title": "Y-axis"},
+      {
+        "field": "Definition"
+      }
+    ]
   },
   "layer": [
     {
@@ -32,8 +41,13 @@
           "scale": {"scheme": ["#fcf6f6", "#c24444"]},
           "type": "quantitative",
           "title": "Correlation Coefficient",
-          "legend": {"direction": "horizontal", "gradientLength": 120, 
-          "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 12}
+          "legend": {
+            "direction": "horizontal",
+            "gradientLength": 120,
+            "titleFont": "SuisseIntl-FreeTrial",
+            "titleFontWeight": "normal",
+            "titleFontSize": 12
+          }
         }
       }
     },

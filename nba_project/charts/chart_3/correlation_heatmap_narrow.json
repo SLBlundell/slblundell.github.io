@@ -21,7 +21,13 @@
   "height": 300,
   "encoding": {
     "y": {"field": "index", "type": "ordinal", "title": null},
-    "x": {"field": "Variable", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}}
+    "x": {"field": "Variable", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}},
+    "tooltip": [
+      {"field": "index", "title": "Y-axis"},
+      {
+        "field": "Definition"
+      }
+    ]
   },
   "layer": [
     {
