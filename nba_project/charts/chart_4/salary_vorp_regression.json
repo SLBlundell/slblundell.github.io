@@ -21,27 +21,47 @@
     "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/chart_4_player_data.csv"
   },
   "layer": [
-    { 
-    "params": [{
-      "name": "grid",
-      "select": "interval",
-      "bind": "scales"
-    }
-  ],
-      "mark": {"type": "point", "filled": false, "color": "#DF9D9D", "fillOpacity": 1.5, "size": 30, "tooltip": {"content": "data"}},
+    {
+      "params": [{"name": "grid", "select": "interval", "bind": "scales"}, {
+      "name": "Position",
+      "select": {"type": "point", "fields": ["Pos"]},
+      "bind": {"input": "select", "options": [null, "C", "PG", "PF", "SG", "SF"], 
+      "name": "Select Position: "}
+    }],
+      "mark": {
+        "type": "point",
+        "color": "#DF9D9D",
+        "filled": false,
+        "fillOpacity": 1.5,
+        "size": 30,
+        "tooltip": {"content": "data"}
+      },
       "encoding": {
         "x": {
           "field": "Salary 2022/23",
           "title": "Salary",
           "type": "quantitative",
-          "axis": {"titleFont": "SuisseIntl-FreeTrial", "format": "$,.0f", "titleFontWeight": "normal", "titleFontSize": 14}
+          "axis": {
+            "titleFont": "SuisseIntl-FreeTrial",
+            "format": "$,.0f",
+            "titleFontWeight": "normal",
+            "titleFontSize": 14
+          }
         },
         "y": {
           "field": "WS",
           "title": "Win Share",
           "type": "quantitative",
-          "axis": {"titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 14}
-        }
+          "axis": {
+            "titleFont": "SuisseIntl-FreeTrial",
+            "titleFontWeight": "normal",
+            "titleFontSize": 14
+          }
+          
+        },
+        "color": {      
+          "condition": {"param": "Position"},
+          "value": "#717e89"}
       }
     },
     {
@@ -54,7 +74,6 @@
         "y": {"field": "WS", "type": "quantitative"}
       }
     }
-
   ],
   "config": {"font": "Roboto Mono"}
 }
