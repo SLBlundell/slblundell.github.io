@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "With salaries within the league skewing dramatically in favour of the highest paid",
+    "text": "Salaries within the league skewing dramatically in favour of the highest paid",
     "font": "SuisseIntl-FreeTrial",
     "color": "#212528",
     "fontWeight": "normal",
