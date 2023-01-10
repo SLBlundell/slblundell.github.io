@@ -25,7 +25,7 @@
 
 
 <body>
-
+  <div class="wrapper">
     <header class="header">
         <h2 class="visually-hidden">Header</h2>
         <div class="wrapper">
@@ -93,28 +93,49 @@
         </p>
         <div class="chart" id="Chart4"> </div>
     
+        <h2>Who Americans spend their time with, by age</h2>
+        <p>Week 3 portfolio charts</p>
+        <div class="chart" id="Chart22"></div>
+        <p>Changing the encoding from a line graph to a stacked line graph enables easier comparison of magnitudes, and results in a simpler appearance</p>
+        <div class="chart" id="Chart23"></div>
+
         <h2>NBA Team Payrolls 2011 - 2022</h2>
         <p>Week 4 portfolio chart</p>
-        <div class="chart" id="Chart5"></div>
-
+        <div class="chart" id="Chart5" style="border-bottom: none"></div>
+        <p style="border-bottom: 2.5px solid var(--grey); padding: 15px">Spotrac was chosen in order to quickly aggregate data from different tables for multiple years</p>
+        
         <h2>UK Labour Market Dashboard - ONS</h2>
         <p>Week 5 portfolio charts</p>
         <div class="chart5" id="Chart6"></div><div class="chart5" id="Chart7"></div><div class="chart5" id="Chart8"></div>
         <div class="chart5" id="Chart9"></div><div class="chart5" id="Chart10"></div><div class="chart5" id="Chart11"></div>
         <div class="chart5" id="Chart12"></div><div class="chart5" id="Chart13"></div><div class="chart5" id="Chart14"></div>
-        <div class="chart5" id="Chart15"></div><div class="chart5" id="Chart16"></div><div class="chart5" id="Chart17"></div>
-
+        <div class="chart5" id="Chart15" style="border-bottom: none"></div><div class="chart5" id="Chart16" style="border-bottom: none"></div><div class="chart5" id="Chart17" style="border-bottom: none"></div>
+        <p style="border-bottom: 2.5px solid var(--grey); padding: 15px">
+          <a href="https://github.com/SLBlundell/slblundell.github.io/blob/main/week5/ons_batch.ipynb">Jupyter Notebook</a>
+          </p>
         <h2>Maps of Hong Kong's Administrative Districts</h2>
         <p>Week 7 portfolio charts</p>
         <div class="chart" id="Chart18"></div>
+        <p>This map shows the extreme state of regional inequality in Hong Kong</p>
         <div class="chart" id="Chart19"></div>
-
         <h2>"Behaviour Change from Smart Meter Usage is the most important factor in reducing Energy Consumption"</h2>
         <p>Week 8 portfolio charts</p>
          <div class="chart9-1" id="Chart20"></div>
         <div class="chart9-2" id="Chart21"></div>
+        <p> Over sample counrtries, the relationship between smart meter usage and energy consumption is currently unclear.</p>
 
-    </div> 
+        <h2>NBA Salaries on Win Share</h2>
+        <p>Week 9 portfolio charts</p>
+         <div class="chart" id="Chart24"></div>
+        <div class="chart" id="Chart25"></div>
+
+        <h2>Predicting NBA playoff performance via linear regression</h2>
+        <p>Week 10-11 portfolio charts<br>Hypothesis: Using data from the modern NBA, can playoff performance be accurately predicted for the 2022/23 season?</p>
+        <img src="nba_project/figures/win_rating_bar.jpeg" alt="Bar chart of predicted playoff ratings">
+        <p>The team with most wins currently does not have the highest predicted rating, rather the Denver Nuggets is highest rated given their high shooting efficiency.<br>
+          <a href="https://github.com/SLBlundell/slblundell.github.io/blob/main/nba_project/charts/chart_3/model.ipynb">Jupyter Notebook</a></p>
+    </div>
+  </div> 
 
 </body>
 
@@ -144,6 +165,10 @@
     var myChart19 = "week7/hk/hk_admin_income.json";
     var myChart20 = "week8/smart_meter_deployment.json";
     var myChart21 = "week8/energy_consumption.json";
+    var myChart22 = "week3/relationships_lines.json";
+    var myChart23 = "week3/relationships_stacked.json";
+    var myChart24 = "week9/salary_vorp_regression.json";
+    var myChart25 = "week9/correlation_heatmap.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -169,6 +194,10 @@
     vegaEmbed('#Chart19', myChart19);
     vegaEmbed('#Chart20', myChart20);
     vegaEmbed('#Chart21', myChart21);
+    vegaEmbed('#Chart22', myChart22);
+    vegaEmbed('#Chart23', myChart23);
+    vegaEmbed('#Chart24', myChart24);
+    vegaEmbed('#Chart25', myChart25);
 
 </script>
 

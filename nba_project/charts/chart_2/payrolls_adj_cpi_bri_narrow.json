@@ -33,7 +33,7 @@
       "axis": {"labelFontSize": 8, "format": "$,.0f", "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 8},
       "scale": {"domain": [0, 400000]}
     },
-    "color": {"value": "#DF9D9D"},
+    "color": {"value": "#C1CE8C"},
     "tooltip": [
       {"field": "Team", "title": "Team"},
       {

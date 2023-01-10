@@ -1,0 +1,3256 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "title": {
+    "text": "Time spent with relationships, USA",
+    "subtitle": [
+      "Average time spent with others is measured in minutes per day, and shown by the age of therespondent.",
+      "Source: American Time Use Survey (2009-2019) and Lindberg (2017)"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "FIELD1": 0,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 15,
+        "Catagory": "Time spent alone",
+        "Value": 193.30588
+      },
+      {
+        "FIELD1": 1,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 16,
+        "Catagory": "Time spent alone",
+        "Value": 206.37056
+      },
+      {
+        "FIELD1": 2,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 17,
+        "Catagory": "Time spent alone",
+        "Value": 224.17331
+      },
+      {
+        "FIELD1": 3,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 18,
+        "Catagory": "Time spent alone",
+        "Value": 242.69839
+      },
+      {
+        "FIELD1": 4,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 19,
+        "Catagory": "Time spent alone",
+        "Value": 267.79385
+      },
+      {
+        "FIELD1": 5,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 20,
+        "Catagory": "Time spent alone",
+        "Value": 277.60379
+      },
+      {
+        "FIELD1": 6,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 21,
+        "Catagory": "Time spent alone",
+        "Value": 270.21817
+      },
+      {
+        "FIELD1": 7,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 22,
+        "Catagory": "Time spent alone",
+        "Value": 283.56686
+      },
+      {
+        "FIELD1": 8,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 23,
+        "Catagory": "Time spent alone",
+        "Value": 270.93015
+      },
+      {
+        "FIELD1": 9,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 24,
+        "Catagory": "Time spent alone",
+        "Value": 265.81378
+      },
+      {
+        "FIELD1": 10,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 25,
+        "Catagory": "Time spent alone",
+        "Value": 275.12906
+      },
+      {
+        "FIELD1": 11,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 26,
+        "Catagory": "Time spent alone",
+        "Value": 281.63202
+      },
+      {
+        "FIELD1": 12,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 27,
+        "Catagory": "Time spent alone",
+        "Value": 259.3331
+      },
+      {
+        "FIELD1": 13,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 28,
+        "Catagory": "Time spent alone",
+        "Value": 261.13989
+      },
+      {
+        "FIELD1": 14,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 29,
+        "Catagory": "Time spent alone",
+        "Value": 253.66589
+      },
+      {
+        "FIELD1": 15,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 30,
+        "Catagory": "Time spent alone",
+        "Value": 250.02524
+      },
+      {
+        "FIELD1": 16,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 31,
+        "Catagory": "Time spent alone",
+        "Value": 253.16542
+      },
+      {
+        "FIELD1": 17,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 32,
+        "Catagory": "Time spent alone",
+        "Value": 255.07323
+      },
+      {
+        "FIELD1": 18,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 33,
+        "Catagory": "Time spent alone",
+        "Value": 244.90091
+      },
+      {
+        "FIELD1": 19,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 34,
+        "Catagory": "Time spent alone",
+        "Value": 263.59116
+      },
+      {
+        "FIELD1": 20,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 35,
+        "Catagory": "Time spent alone",
+        "Value": 262.62488
+      },
+      {
+        "FIELD1": 21,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 36,
+        "Catagory": "Time spent alone",
+        "Value": 273.27942
+      },
+      {
+        "FIELD1": 22,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 37,
+        "Catagory": "Time spent alone",
+        "Value": 267.09787
+      },
+      {
+        "FIELD1": 23,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 38,
+        "Catagory": "Time spent alone",
+        "Value": 258.99704
+      },
+      {
+        "FIELD1": 24,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 39,
+        "Catagory": "Time spent alone",
+        "Value": 281.98877
+      },
+      {
+        "FIELD1": 25,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 40,
+        "Catagory": "Time spent alone",
+        "Value": 278.25668
+      },
+      {
+        "FIELD1": 26,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 41,
+        "Catagory": "Time spent alone",
+        "Value": 292.07227
+      },
+      {
+        "FIELD1": 27,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 42,
+        "Catagory": "Time spent alone",
+        "Value": 297.90939
+      },
+      {
+        "FIELD1": 28,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 43,
+        "Catagory": "Time spent alone",
+        "Value": 321.74783
+      },
+      {
+        "FIELD1": 29,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 44,
+        "Catagory": "Time spent alone",
+        "Value": 312.69861
+      },
+      {
+        "FIELD1": 30,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 45,
+        "Catagory": "Time spent alone",
+        "Value": 309.03583
+      },
+      {
+        "FIELD1": 31,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 46,
+        "Catagory": "Time spent alone",
+        "Value": 326.78207
+      },
+      {
+        "FIELD1": 32,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 47,
+        "Catagory": "Time spent alone",
+        "Value": 338.24756
+      },
+      {
+        "FIELD1": 33,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 48,
+        "Catagory": "Time spent alone",
+        "Value": 332.5762
+      },
+      {
+        "FIELD1": 34,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 49,
+        "Catagory": "Time spent alone",
+        "Value": 339.72601
+      },
+      {
+        "FIELD1": 35,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 50,
+        "Catagory": "Time spent alone",
+        "Value": 361.14328
+      },
+      {
+        "FIELD1": 36,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 51,
+        "Catagory": "Time spent alone",
+        "Value": 368.59146
+      },
+      {
+        "FIELD1": 37,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 52,
+        "Catagory": "Time spent alone",
+        "Value": 380.84085
+      },
+      {
+        "FIELD1": 38,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 53,
+        "Catagory": "Time spent alone",
+        "Value": 372.17041
+      },
+      {
+        "FIELD1": 39,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 54,
+        "Catagory": "Time spent alone",
+        "Value": 377.70459
+      },
+      {
+        "FIELD1": 40,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 55,
+        "Catagory": "Time spent alone",
+        "Value": 384.14532
+      },
+      {
+        "FIELD1": 41,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 56,
+        "Catagory": "Time spent alone",
+        "Value": 387.00711
+      },
+      {
+        "FIELD1": 42,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 57,
+        "Catagory": "Time spent alone",
+        "Value": 399.18466
+      },
+      {
+        "FIELD1": 43,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 58,
+        "Catagory": "Time spent alone",
+        "Value": 409.77731
+      },
+      {
+        "FIELD1": 44,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 59,
+        "Catagory": "Time spent alone",
+        "Value": 411.51978
+      },
+      {
+        "FIELD1": 45,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 60,
+        "Catagory": "Time spent alone",
+        "Value": 413.32019
+      },
+      {
+        "FIELD1": 46,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 61,
+        "Catagory": "Time spent alone",
+        "Value": 414.82727
+      },
+      {
+        "FIELD1": 47,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 62,
+        "Catagory": "Time spent alone",
+        "Value": 425.2204
+      },
+      {
+        "FIELD1": 48,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 63,
+        "Catagory": "Time spent alone",
+        "Value": 430.51068
+      },
+      {
+        "FIELD1": 49,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 64,
+        "Catagory": "Time spent alone",
+        "Value": 449.01306
+      },
+      {
+        "FIELD1": 50,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 65,
+        "Catagory": "Time spent alone",
+        "Value": 444.02954
+      },
+      {
+        "FIELD1": 51,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 66,
+        "Catagory": "Time spent alone",
+        "Value": 431.98727
+      },
+      {
+        "FIELD1": 52,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 67,
+        "Catagory": "Time spent alone",
+        "Value": 433.85413
+      },
+      {
+        "FIELD1": 53,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 68,
+        "Catagory": "Time spent alone",
+        "Value": 448.22601
+      },
+      {
+        "FIELD1": 54,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 69,
+        "Catagory": "Time spent alone",
+        "Value": 443.00061
+      },
+      {
+        "FIELD1": 55,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 70,
+        "Catagory": "Time spent alone",
+        "Value": 448.85193
+      },
+      {
+        "FIELD1": 56,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 71,
+        "Catagory": "Time spent alone",
+        "Value": 444.47784
+      },
+      {
+        "FIELD1": 57,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 72,
+        "Catagory": "Time spent alone",
+        "Value": 474.45526
+      },
+      {
+        "FIELD1": 58,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 73,
+        "Catagory": "Time spent alone",
+        "Value": 451.40637
+      },
+      {
+        "FIELD1": 59,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 74,
+        "Catagory": "Time spent alone",
+        "Value": 458.6745
+      },
+      {
+        "FIELD1": 60,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 75,
+        "Catagory": "Time spent alone",
+        "Value": 463.43195
+      },
+      {
+        "FIELD1": 61,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 76,
+        "Catagory": "Time spent alone",
+        "Value": 456.49493
+      },
+      {
+        "FIELD1": 62,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 77,
+        "Catagory": "Time spent alone",
+        "Value": 454.3125
+      },
+      {
+        "FIELD1": 63,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 78,
+        "Catagory": "Time spent alone",
+        "Value": 461.63959
+      },
+      {
+        "FIELD1": 64,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 79,
+        "Catagory": "Time spent alone",
+        "Value": 485.83075
+      },
+      {
+        "FIELD1": 65,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 80,
+        "Catagory": "Time spent alone",
+        "Value": 476.76736
+      },
+      {
+        "FIELD1": 66,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 85,
+        "Catagory": "Time spent alone",
+        "Value": 501.88327
+      },
+      {
+        "FIELD1": 67,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 15,
+        "Catagory": "Time spent with friends",
+        "Value": 109.4145
+      },
+      {
+        "FIELD1": 68,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 16,
+        "Catagory": "Time spent with friends",
+        "Value": 110.7418
+      },
+      {
+        "FIELD1": 69,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 17,
+        "Catagory": "Time spent with friends",
+        "Value": 120.41887
+      },
+      {
+        "FIELD1": 70,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 18,
+        "Catagory": "Time spent with friends",
+        "Value": 137.75107
+      },
+      {
+        "FIELD1": 71,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 19,
+        "Catagory": "Time spent with friends",
+        "Value": 129.85716
+      },
+      {
+        "FIELD1": 72,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 20,
+        "Catagory": "Time spent with friends",
+        "Value": 122.7402
+      },
+      {
+        "FIELD1": 73,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 21,
+        "Catagory": "Time spent with friends",
+        "Value": 122.40627
+      },
+      {
+        "FIELD1": 74,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 22,
+        "Catagory": "Time spent with friends",
+        "Value": 100.16862
+      },
+      {
+        "FIELD1": 75,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 23,
+        "Catagory": "Time spent with friends",
+        "Value": 101.07177
+      },
+      {
+        "FIELD1": 76,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 24,
+        "Catagory": "Time spent with friends",
+        "Value": 96.786346
+      },
+      {
+        "FIELD1": 77,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 25,
+        "Catagory": "Time spent with friends",
+        "Value": 77.543015
+      },
+      {
+        "FIELD1": 78,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 26,
+        "Catagory": "Time spent with friends",
+        "Value": 77.856834
+      },
+      {
+        "FIELD1": 79,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 27,
+        "Catagory": "Time spent with friends",
+        "Value": 74.140686
+      },
+      {
+        "FIELD1": 80,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 28,
+        "Catagory": "Time spent with friends",
+        "Value": 62.491688
+      },
+      {
+        "FIELD1": 81,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 29,
+        "Catagory": "Time spent with friends",
+        "Value": 55.084454
+      },
+      {
+        "FIELD1": 82,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 30,
+        "Catagory": "Time spent with friends",
+        "Value": 53.478016
+      },
+      {
+        "FIELD1": 83,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 31,
+        "Catagory": "Time spent with friends",
+        "Value": 50.925926
+      },
+      {
+        "FIELD1": 84,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 32,
+        "Catagory": "Time spent with friends",
+        "Value": 49.464462
+      },
+      {
+        "FIELD1": 85,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 33,
+        "Catagory": "Time spent with friends",
+        "Value": 49.731628
+      },
+      {
+        "FIELD1": 86,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 34,
+        "Catagory": "Time spent with friends",
+        "Value": 42.650288
+      },
+      {
+        "FIELD1": 87,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 35,
+        "Catagory": "Time spent with friends",
+        "Value": 41.661636
+      },
+      {
+        "FIELD1": 88,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 36,
+        "Catagory": "Time spent with friends",
+        "Value": 40.120937
+      },
+      {
+        "FIELD1": 89,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 37,
+        "Catagory": "Time spent with friends",
+        "Value": 43.362503
+      },
+      {
+        "FIELD1": 90,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 38,
+        "Catagory": "Time spent with friends",
+        "Value": 42.101093
+      },
+      {
+        "FIELD1": 91,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 39,
+        "Catagory": "Time spent with friends",
+        "Value": 33.611919
+      },
+      {
+        "FIELD1": 92,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 40,
+        "Catagory": "Time spent with friends",
+        "Value": 36.197014
+      },
+      {
+        "FIELD1": 93,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 41,
+        "Catagory": "Time spent with friends",
+        "Value": 38.729492
+      },
+      {
+        "FIELD1": 94,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 42,
+        "Catagory": "Time spent with friends",
+        "Value": 38.695633
+      },
+      {
+        "FIELD1": 95,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 43,
+        "Catagory": "Time spent with friends",
+        "Value": 39.107994
+      },
+      {
+        "FIELD1": 96,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 44,
+        "Catagory": "Time spent with friends",
+        "Value": 38.859802
+      },
+      {
+        "FIELD1": 97,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 45,
+        "Catagory": "Time spent with friends",
+        "Value": 36.090996
+      },
+      {
+        "FIELD1": 98,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 46,
+        "Catagory": "Time spent with friends",
+        "Value": 37.459354
+      },
+      {
+        "FIELD1": 99,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 47,
+        "Catagory": "Time spent with friends",
+        "Value": 39.243477
+      },
+      {
+        "FIELD1": 100,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 48,
+        "Catagory": "Time spent with friends",
+        "Value": 33.357357
+      },
+      {
+        "FIELD1": 101,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 49,
+        "Catagory": "Time spent with friends",
+        "Value": 37.315029
+      },
+      {
+        "FIELD1": 102,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 50,
+        "Catagory": "Time spent with friends",
+        "Value": 28.917883
+      },
+      {
+        "FIELD1": 103,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 51,
+        "Catagory": "Time spent with friends",
+        "Value": 35.627602
+      },
+      {
+        "FIELD1": 104,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 52,
+        "Catagory": "Time spent with friends",
+        "Value": 33.961197
+      },
+      {
+        "FIELD1": 105,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 53,
+        "Catagory": "Time spent with friends",
+        "Value": 31.585169
+      },
+      {
+        "FIELD1": 106,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 54,
+        "Catagory": "Time spent with friends",
+        "Value": 34.837147
+      },
+      {
+        "FIELD1": 107,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 55,
+        "Catagory": "Time spent with friends",
+        "Value": 33.079144
+      },
+      {
+        "FIELD1": 108,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 56,
+        "Catagory": "Time spent with friends",
+        "Value": 36.820248
+      },
+      {
+        "FIELD1": 109,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 57,
+        "Catagory": "Time spent with friends",
+        "Value": 31.479084
+      },
+      {
+        "FIELD1": 110,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 58,
+        "Catagory": "Time spent with friends",
+        "Value": 35.2756
+      },
+      {
+        "FIELD1": 111,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 59,
+        "Catagory": "Time spent with friends",
+        "Value": 29.068735
+      },
+      {
+        "FIELD1": 112,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 60,
+        "Catagory": "Time spent with friends",
+        "Value": 35.94643
+      },
+      {
+        "FIELD1": 113,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 61,
+        "Catagory": "Time spent with friends",
+        "Value": 32.807606
+      },
+      {
+        "FIELD1": 114,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 62,
+        "Catagory": "Time spent with friends",
+        "Value": 34.453568
+      },
+      {
+        "FIELD1": 115,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 63,
+        "Catagory": "Time spent with friends",
+        "Value": 36.147518
+      },
+      {
+        "FIELD1": 116,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 64,
+        "Catagory": "Time spent with friends",
+        "Value": 35.180847
+      },
+      {
+        "FIELD1": 117,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 65,
+        "Catagory": "Time spent with friends",
+        "Value": 35.90049
+      },
+      {
+        "FIELD1": 118,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 66,
+        "Catagory": "Time spent with friends",
+        "Value": 40.828274
+      },
+      {
+        "FIELD1": 119,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 67,
+        "Catagory": "Time spent with friends",
+        "Value": 38.98082
+      },
+      {
+        "FIELD1": 120,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 68,
+        "Catagory": "Time spent with friends",
+        "Value": 41.382526
+      },
+      {
+        "FIELD1": 121,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 69,
+        "Catagory": "Time spent with friends",
+        "Value": 42.001629
+      },
+      {
+        "FIELD1": 122,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 70,
+        "Catagory": "Time spent with friends",
+        "Value": 45.80217
+      },
+      {
+        "FIELD1": 123,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 71,
+        "Catagory": "Time spent with friends",
+        "Value": 44.433987
+      },
+      {
+        "FIELD1": 124,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 72,
+        "Catagory": "Time spent with friends",
+        "Value": 44.234802
+      },
+      {
+        "FIELD1": 125,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 73,
+        "Catagory": "Time spent with friends",
+        "Value": 36.592476
+      },
+      {
+        "FIELD1": 126,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 74,
+        "Catagory": "Time spent with friends",
+        "Value": 40.508751
+      },
+      {
+        "FIELD1": 127,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 75,
+        "Catagory": "Time spent with friends",
+        "Value": 39.079994
+      },
+      {
+        "FIELD1": 128,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 76,
+        "Catagory": "Time spent with friends",
+        "Value": 41.503906
+      },
+      {
+        "FIELD1": 129,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 77,
+        "Catagory": "Time spent with friends",
+        "Value": 33.595589
+      },
+      {
+        "FIELD1": 130,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 78,
+        "Catagory": "Time spent with friends",
+        "Value": 39.297825
+      },
+      {
+        "FIELD1": 131,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 79,
+        "Catagory": "Time spent with friends",
+        "Value": 41.975792
+      },
+      {
+        "FIELD1": 132,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 80,
+        "Catagory": "Time spent with friends",
+        "Value": 35.589745
+      },
+      {
+        "FIELD1": 133,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 85,
+        "Catagory": "Time spent with friends",
+        "Value": 36.37146
+      },
+      {
+        "FIELD1": 134,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 15,
+        "Catagory": "Time spent with children",
+        "Value": 23.463852
+      },
+      {
+        "FIELD1": 135,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 16,
+        "Catagory": "Time spent with children",
+        "Value": 28.609867
+      },
+      {
+        "FIELD1": 136,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 17,
+        "Catagory": "Time spent with children",
+        "Value": 26.089708
+      },
+      {
+        "FIELD1": 137,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 18,
+        "Catagory": "Time spent with children",
+        "Value": 27.387308
+      },
+      {
+        "FIELD1": 138,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 19,
+        "Catagory": "Time spent with children",
+        "Value": 36.445004
+      },
+      {
+        "FIELD1": 139,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 20,
+        "Catagory": "Time spent with children",
+        "Value": 54.630512
+      },
+      {
+        "FIELD1": 140,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 21,
+        "Catagory": "Time spent with children",
+        "Value": 69.293869
+      },
+      {
+        "FIELD1": 141,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 22,
+        "Catagory": "Time spent with children",
+        "Value": 72.302246
+      },
+      {
+        "FIELD1": 142,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 23,
+        "Catagory": "Time spent with children",
+        "Value": 96.935883
+      },
+      {
+        "FIELD1": 143,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 24,
+        "Catagory": "Time spent with children",
+        "Value": 99.394424
+      },
+      {
+        "FIELD1": 144,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 25,
+        "Catagory": "Time spent with children",
+        "Value": 119.50971
+      },
+      {
+        "FIELD1": 145,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 26,
+        "Catagory": "Time spent with children",
+        "Value": 128.59393
+      },
+      {
+        "FIELD1": 146,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 27,
+        "Catagory": "Time spent with children",
+        "Value": 153.33383
+      },
+      {
+        "FIELD1": 147,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 28,
+        "Catagory": "Time spent with children",
+        "Value": 175.83809
+      },
+      {
+        "FIELD1": 148,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 29,
+        "Catagory": "Time spent with children",
+        "Value": 194.49931
+      },
+      {
+        "FIELD1": 149,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 30,
+        "Catagory": "Time spent with children",
+        "Value": 199.76436
+      },
+      {
+        "FIELD1": 150,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 31,
+        "Catagory": "Time spent with children",
+        "Value": 225.92371
+      },
+      {
+        "FIELD1": 151,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 32,
+        "Catagory": "Time spent with children",
+        "Value": 230.71593
+      },
+      {
+        "FIELD1": 152,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 33,
+        "Catagory": "Time spent with children",
+        "Value": 256.41312
+      },
+      {
+        "FIELD1": 153,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 34,
+        "Catagory": "Time spent with children",
+        "Value": 261.18497
+      },
+      {
+        "FIELD1": 154,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 35,
+        "Catagory": "Time spent with children",
+        "Value": 248.93806
+      },
+      {
+        "FIELD1": 155,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 36,
+        "Catagory": "Time spent with children",
+        "Value": 256.59799
+      },
+      {
+        "FIELD1": 156,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 37,
+        "Catagory": "Time spent with children",
+        "Value": 256.37634
+      },
+      {
+        "FIELD1": 157,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 38,
+        "Catagory": "Time spent with children",
+        "Value": 254.45975
+      },
+      {
+        "FIELD1": 158,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 39,
+        "Catagory": "Time spent with children",
+        "Value": 266.07874
+      },
+      {
+        "FIELD1": 159,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 40,
+        "Catagory": "Time spent with children",
+        "Value": 242.43935
+      },
+      {
+        "FIELD1": 160,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 41,
+        "Catagory": "Time spent with children",
+        "Value": 237.29298
+      },
+      {
+        "FIELD1": 161,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 42,
+        "Catagory": "Time spent with children",
+        "Value": 222.96886
+      },
+      {
+        "FIELD1": 162,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 43,
+        "Catagory": "Time spent with children",
+        "Value": 207.65651
+      },
+      {
+        "FIELD1": 163,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 44,
+        "Catagory": "Time spent with children",
+        "Value": 207.01961
+      },
+      {
+        "FIELD1": 164,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 45,
+        "Catagory": "Time spent with children",
+        "Value": 199.21028
+      },
+      {
+        "FIELD1": 165,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 46,
+        "Catagory": "Time spent with children",
+        "Value": 177.52652
+      },
+      {
+        "FIELD1": 166,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 47,
+        "Catagory": "Time spent with children",
+        "Value": 168.4313
+      },
+      {
+        "FIELD1": 167,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 48,
+        "Catagory": "Time spent with children",
+        "Value": 157.297
+      },
+      {
+        "FIELD1": 168,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 49,
+        "Catagory": "Time spent with children",
+        "Value": 132.68301
+      },
+      {
+        "FIELD1": 169,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 50,
+        "Catagory": "Time spent with children",
+        "Value": 132.44537
+      },
+      {
+        "FIELD1": 170,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 51,
+        "Catagory": "Time spent with children",
+        "Value": 123.67976
+      },
+      {
+        "FIELD1": 171,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 52,
+        "Catagory": "Time spent with children",
+        "Value": 102.66885
+      },
+      {
+        "FIELD1": 172,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 53,
+        "Catagory": "Time spent with children",
+        "Value": 102.3604
+      },
+      {
+        "FIELD1": 173,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 54,
+        "Catagory": "Time spent with children",
+        "Value": 89.755821
+      },
+      {
+        "FIELD1": 174,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 55,
+        "Catagory": "Time spent with children",
+        "Value": 88.129921
+      },
+      {
+        "FIELD1": 175,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 56,
+        "Catagory": "Time spent with children",
+        "Value": 78.608688
+      },
+      {
+        "FIELD1": 176,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 57,
+        "Catagory": "Time spent with children",
+        "Value": 73.898285
+      },
+      {
+        "FIELD1": 177,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 58,
+        "Catagory": "Time spent with children",
+        "Value": 68.309761
+      },
+      {
+        "FIELD1": 178,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 59,
+        "Catagory": "Time spent with children",
+        "Value": 70.334312
+      },
+      {
+        "FIELD1": 179,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 60,
+        "Catagory": "Time spent with children",
+        "Value": 61.933525
+      },
+      {
+        "FIELD1": 180,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 61,
+        "Catagory": "Time spent with children",
+        "Value": 71.07634
+      },
+      {
+        "FIELD1": 181,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 62,
+        "Catagory": "Time spent with children",
+        "Value": 57.484367
+      },
+      {
+        "FIELD1": 182,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 63,
+        "Catagory": "Time spent with children",
+        "Value": 62.510818
+      },
+      {
+        "FIELD1": 183,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 64,
+        "Catagory": "Time spent with children",
+        "Value": 55.407318
+      },
+      {
+        "FIELD1": 184,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 65,
+        "Catagory": "Time spent with children",
+        "Value": 57.586105
+      },
+      {
+        "FIELD1": 185,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 66,
+        "Catagory": "Time spent with children",
+        "Value": 59.682854
+      },
+      {
+        "FIELD1": 186,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 67,
+        "Catagory": "Time spent with children",
+        "Value": 62.771469
+      },
+      {
+        "FIELD1": 187,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 68,
+        "Catagory": "Time spent with children",
+        "Value": 53.818981
+      },
+      {
+        "FIELD1": 188,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 69,
+        "Catagory": "Time spent with children",
+        "Value": 68.845222
+      },
+      {
+        "FIELD1": 189,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 70,
+        "Catagory": "Time spent with children",
+        "Value": 52.782196
+      },
+      {
+        "FIELD1": 190,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 71,
+        "Catagory": "Time spent with children",
+        "Value": 59.073078
+      },
+      {
+        "FIELD1": 191,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 72,
+        "Catagory": "Time spent with children",
+        "Value": 46.338203
+      },
+      {
+        "FIELD1": 192,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 73,
+        "Catagory": "Time spent with children",
+        "Value": 56.115063
+      },
+      {
+        "FIELD1": 193,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 74,
+        "Catagory": "Time spent with children",
+        "Value": 48.986588
+      },
+      {
+        "FIELD1": 194,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 75,
+        "Catagory": "Time spent with children",
+        "Value": 48.644051
+      },
+      {
+        "FIELD1": 195,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 76,
+        "Catagory": "Time spent with children",
+        "Value": 44.339306
+      },
+      {
+        "FIELD1": 196,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 77,
+        "Catagory": "Time spent with children",
+        "Value": 46.719131
+      },
+      {
+        "FIELD1": 197,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 78,
+        "Catagory": "Time spent with children",
+        "Value": 42.985035
+      },
+      {
+        "FIELD1": 198,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 79,
+        "Catagory": "Time spent with children",
+        "Value": 38.609028
+      },
+      {
+        "FIELD1": 199,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 80,
+        "Catagory": "Time spent with children",
+        "Value": 45.010258
+      },
+      {
+        "FIELD1": 200,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 85,
+        "Catagory": "Time spent with children",
+        "Value": 45.463383
+      },
+      {
+        "FIELD1": 201,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 15,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 267.12091
+      },
+      {
+        "FIELD1": 202,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 16,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 254.3381
+      },
+      {
+        "FIELD1": 203,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 17,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 229.81561
+      },
+      {
+        "FIELD1": 204,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 18,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 236.35201
+      },
+      {
+        "FIELD1": 205,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 19,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 201.2766
+      },
+      {
+        "FIELD1": 206,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 20,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 173.13503
+      },
+      {
+        "FIELD1": 207,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 21,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 152.67331
+      },
+      {
+        "FIELD1": 208,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 22,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 135.8266
+      },
+      {
+        "FIELD1": 209,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 23,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 125.79333
+      },
+      {
+        "FIELD1": 210,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 24,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 103.75845
+      },
+      {
+        "FIELD1": 211,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 25,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 101.02744
+      },
+      {
+        "FIELD1": 212,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 26,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 87.654915
+      },
+      {
+        "FIELD1": 213,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 27,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 85.956535
+      },
+      {
+        "FIELD1": 214,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 28,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 80.147217
+      },
+      {
+        "FIELD1": 215,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 29,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 81.6101
+      },
+      {
+        "FIELD1": 216,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 30,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 72.476334
+      },
+      {
+        "FIELD1": 217,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 31,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 69.526543
+      },
+      {
+        "FIELD1": 218,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 32,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 61.336475
+      },
+      {
+        "FIELD1": 219,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 33,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 66.359383
+      },
+      {
+        "FIELD1": 220,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 34,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 65.723053
+      },
+      {
+        "FIELD1": 221,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 35,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 62.107143
+      },
+      {
+        "FIELD1": 222,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 36,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 64.809921
+      },
+      {
+        "FIELD1": 223,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 37,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 56.446011
+      },
+      {
+        "FIELD1": 224,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 38,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 54.001514
+      },
+      {
+        "FIELD1": 225,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 39,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 52.701588
+      },
+      {
+        "FIELD1": 226,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 40,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 54.638985
+      },
+      {
+        "FIELD1": 227,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 41,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 55.611694
+      },
+      {
+        "FIELD1": 228,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 42,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 50.690075
+      },
+      {
+        "FIELD1": 229,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 43,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 55.288914
+      },
+      {
+        "FIELD1": 230,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 44,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 54.224209
+      },
+      {
+        "FIELD1": 231,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 45,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 58.068977
+      },
+      {
+        "FIELD1": 232,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 46,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 54.798512
+      },
+      {
+        "FIELD1": 233,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 47,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 60.089104
+      },
+      {
+        "FIELD1": 234,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 48,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 58.556328
+      },
+      {
+        "FIELD1": 235,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 49,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 58.63641
+      },
+      {
+        "FIELD1": 236,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 50,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 65.362938
+      },
+      {
+        "FIELD1": 237,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 51,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 62.211754
+      },
+      {
+        "FIELD1": 238,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 52,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 65.243996
+      },
+      {
+        "FIELD1": 239,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 53,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 59.573872
+      },
+      {
+        "FIELD1": 240,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 54,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 60.021786
+      },
+      {
+        "FIELD1": 241,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 55,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 60.739655
+      },
+      {
+        "FIELD1": 242,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 56,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 66.083549
+      },
+      {
+        "FIELD1": 243,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 57,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 58.831005
+      },
+      {
+        "FIELD1": 244,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 58,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 65.851311
+      },
+      {
+        "FIELD1": 245,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 59,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 67.322807
+      },
+      {
+        "FIELD1": 246,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 60,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 65.528786
+      },
+      {
+        "FIELD1": 247,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 61,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 60.896008
+      },
+      {
+        "FIELD1": 248,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 62,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 56.583904
+      },
+      {
+        "FIELD1": 249,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 63,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 73.459251
+      },
+      {
+        "FIELD1": 250,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 64,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 63.962303
+      },
+      {
+        "FIELD1": 251,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 65,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 65.28495
+      },
+      {
+        "FIELD1": 252,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 66,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 69.281334
+      },
+      {
+        "FIELD1": 253,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 67,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 58.832348
+      },
+      {
+        "FIELD1": 254,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 68,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 53.716782
+      },
+      {
+        "FIELD1": 255,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 69,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 61.424671
+      },
+      {
+        "FIELD1": 256,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 70,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 47.977863
+      },
+      {
+        "FIELD1": 257,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 71,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 58.145714
+      },
+      {
+        "FIELD1": 258,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 72,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 57.166805
+      },
+      {
+        "FIELD1": 259,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 73,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 56.550076
+      },
+      {
+        "FIELD1": 260,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 74,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 66.20977
+      },
+      {
+        "FIELD1": 261,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 75,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 56.281876
+      },
+      {
+        "FIELD1": 262,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 76,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 51.955276
+      },
+      {
+        "FIELD1": 263,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 77,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 67.455605
+      },
+      {
+        "FIELD1": 264,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 78,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 59.704296
+      },
+      {
+        "FIELD1": 265,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 79,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 51.944447
+      },
+      {
+        "FIELD1": 266,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 80,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 66.100365
+      },
+      {
+        "FIELD1": 267,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 85,
+        "Catagory": "Time spent with with parents, siblings and other family",
+        "Value": 65.052567
+      },
+      {
+        "FIELD1": 268,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 15,
+        "Catagory": "Time spent with partner",
+        "Value": 0
+      },
+      {
+        "FIELD1": 269,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 16,
+        "Catagory": "Time spent with partner",
+        "Value": 0.030690858
+      },
+      {
+        "FIELD1": 270,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 17,
+        "Catagory": "Time spent with partner",
+        "Value": 1.1228406
+      },
+      {
+        "FIELD1": 271,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 18,
+        "Catagory": "Time spent with partner",
+        "Value": 5.6972671
+      },
+      {
+        "FIELD1": 272,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 19,
+        "Catagory": "Time spent with partner",
+        "Value": 19.341291
+      },
+      {
+        "FIELD1": 273,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 20,
+        "Catagory": "Time spent with partner",
+        "Value": 26.35417
+      },
+      {
+        "FIELD1": 274,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 21,
+        "Catagory": "Time spent with partner",
+        "Value": 59.897781
+      },
+      {
+        "FIELD1": 275,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 22,
+        "Catagory": "Time spent with partner",
+        "Value": 55.767094
+      },
+      {
+        "FIELD1": 276,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 23,
+        "Catagory": "Time spent with partner",
+        "Value": 78.188667
+      },
+      {
+        "FIELD1": 277,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 24,
+        "Catagory": "Time spent with partner",
+        "Value": 99.44416
+      },
+      {
+        "FIELD1": 278,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 25,
+        "Catagory": "Time spent with partner",
+        "Value": 121.25083
+      },
+      {
+        "FIELD1": 279,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 26,
+        "Catagory": "Time spent with partner",
+        "Value": 139.91745
+      },
+      {
+        "FIELD1": 280,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 27,
+        "Catagory": "Time spent with partner",
+        "Value": 151.88562
+      },
+      {
+        "FIELD1": 281,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 28,
+        "Catagory": "Time spent with partner",
+        "Value": 168.24556
+      },
+      {
+        "FIELD1": 282,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 29,
+        "Catagory": "Time spent with partner",
+        "Value": 176.19919
+      },
+      {
+        "FIELD1": 283,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 30,
+        "Catagory": "Time spent with partner",
+        "Value": 180.02309
+      },
+      {
+        "FIELD1": 284,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 31,
+        "Catagory": "Time spent with partner",
+        "Value": 203.71202
+      },
+      {
+        "FIELD1": 285,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 32,
+        "Catagory": "Time spent with partner",
+        "Value": 192.00175
+      },
+      {
+        "FIELD1": 286,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 33,
+        "Catagory": "Time spent with partner",
+        "Value": 200.02365
+      },
+      {
+        "FIELD1": 287,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 34,
+        "Catagory": "Time spent with partner",
+        "Value": 199.23759
+      },
+      {
+        "FIELD1": 288,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 35,
+        "Catagory": "Time spent with partner",
+        "Value": 198.27702
+      },
+      {
+        "FIELD1": 289,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 36,
+        "Catagory": "Time spent with partner",
+        "Value": 197.55948
+      },
+      {
+        "FIELD1": 290,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 37,
+        "Catagory": "Time spent with partner",
+        "Value": 204.00514
+      },
+      {
+        "FIELD1": 291,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 38,
+        "Catagory": "Time spent with partner",
+        "Value": 203.30919
+      },
+      {
+        "FIELD1": 292,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 39,
+        "Catagory": "Time spent with partner",
+        "Value": 212.07637
+      },
+      {
+        "FIELD1": 293,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 40,
+        "Catagory": "Time spent with partner",
+        "Value": 201.94627
+      },
+      {
+        "FIELD1": 294,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 41,
+        "Catagory": "Time spent with partner",
+        "Value": 194.68652
+      },
+      {
+        "FIELD1": 295,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 42,
+        "Catagory": "Time spent with partner",
+        "Value": 182.25496
+      },
+      {
+        "FIELD1": 296,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 43,
+        "Catagory": "Time spent with partner",
+        "Value": 181.83145
+      },
+      {
+        "FIELD1": 297,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 44,
+        "Catagory": "Time spent with partner",
+        "Value": 191.94835
+      },
+      {
+        "FIELD1": 298,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 45,
+        "Catagory": "Time spent with partner",
+        "Value": 183.99062
+      },
+      {
+        "FIELD1": 299,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 46,
+        "Catagory": "Time spent with partner",
+        "Value": 186.65195
+      },
+      {
+        "FIELD1": 300,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 47,
+        "Catagory": "Time spent with partner",
+        "Value": 181.05563
+      },
+      {
+        "FIELD1": 301,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 48,
+        "Catagory": "Time spent with partner",
+        "Value": 197.96497
+      },
+      {
+        "FIELD1": 302,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 49,
+        "Catagory": "Time spent with partner",
+        "Value": 194.11002
+      },
+      {
+        "FIELD1": 303,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 50,
+        "Catagory": "Time spent with partner",
+        "Value": 174.92821
+      },
+      {
+        "FIELD1": 304,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 51,
+        "Catagory": "Time spent with partner",
+        "Value": 187.80592
+      },
+      {
+        "FIELD1": 305,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 52,
+        "Catagory": "Time spent with partner",
+        "Value": 190.51634
+      },
+      {
+        "FIELD1": 306,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 53,
+        "Catagory": "Time spent with partner",
+        "Value": 188.71446
+      },
+      {
+        "FIELD1": 307,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 54,
+        "Catagory": "Time spent with partner",
+        "Value": 182.8898
+      },
+      {
+        "FIELD1": 308,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 55,
+        "Catagory": "Time spent with partner",
+        "Value": 184.38846
+      },
+      {
+        "FIELD1": 309,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 56,
+        "Catagory": "Time spent with partner",
+        "Value": 195.93608
+      },
+      {
+        "FIELD1": 310,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 57,
+        "Catagory": "Time spent with partner",
+        "Value": 185.31619
+      },
+      {
+        "FIELD1": 311,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 58,
+        "Catagory": "Time spent with partner",
+        "Value": 186.54398
+      },
+      {
+        "FIELD1": 312,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 59,
+        "Catagory": "Time spent with partner",
+        "Value": 199.87039
+      },
+      {
+        "FIELD1": 313,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 60,
+        "Catagory": "Time spent with partner",
+        "Value": 204.63687
+      },
+      {
+        "FIELD1": 314,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 61,
+        "Catagory": "Time spent with partner",
+        "Value": 205.22923
+      },
+      {
+        "FIELD1": 315,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 62,
+        "Catagory": "Time spent with partner",
+        "Value": 224.05167
+      },
+      {
+        "FIELD1": 316,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 63,
+        "Catagory": "Time spent with partner",
+        "Value": 232.44521
+      },
+      {
+        "FIELD1": 317,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 64,
+        "Catagory": "Time spent with partner",
+        "Value": 231.84886
+      },
+      {
+        "FIELD1": 318,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 65,
+        "Catagory": "Time spent with partner",
+        "Value": 242.53215
+      },
+      {
+        "FIELD1": 319,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 66,
+        "Catagory": "Time spent with partner",
+        "Value": 255.86
+      },
+      {
+        "FIELD1": 320,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 67,
+        "Catagory": "Time spent with partner",
+        "Value": 258.14743
+      },
+      {
+        "FIELD1": 321,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 68,
+        "Catagory": "Time spent with partner",
+        "Value": 260.36365
+      },
+      {
+        "FIELD1": 322,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 69,
+        "Catagory": "Time spent with partner",
+        "Value": 270.69342
+      },
+      {
+        "FIELD1": 323,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 70,
+        "Catagory": "Time spent with partner",
+        "Value": 261.86359
+      },
+      {
+        "FIELD1": 324,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 71,
+        "Catagory": "Time spent with partner",
+        "Value": 266.694
+      },
+      {
+        "FIELD1": 325,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 72,
+        "Catagory": "Time spent with partner",
+        "Value": 261.05215
+      },
+      {
+        "FIELD1": 326,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 73,
+        "Catagory": "Time spent with partner",
+        "Value": 276.13379
+      },
+      {
+        "FIELD1": 327,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 74,
+        "Catagory": "Time spent with partner",
+        "Value": 254.44495
+      },
+      {
+        "FIELD1": 328,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 75,
+        "Catagory": "Time spent with partner",
+        "Value": 252.93309
+      },
+      {
+        "FIELD1": 329,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 76,
+        "Catagory": "Time spent with partner",
+        "Value": 266.23712
+      },
+      {
+        "FIELD1": 330,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 77,
+        "Catagory": "Time spent with partner",
+        "Value": 272.73013
+      },
+      {
+        "FIELD1": 331,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 78,
+        "Catagory": "Time spent with partner",
+        "Value": 256.41376
+      },
+      {
+        "FIELD1": 332,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 79,
+        "Catagory": "Time spent with partner",
+        "Value": 235.3701
+      },
+      {
+        "FIELD1": 333,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 80,
+        "Catagory": "Time spent with partner",
+        "Value": 227.04634
+      },
+      {
+        "FIELD1": 334,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 85,
+        "Catagory": "Time spent with partner",
+        "Value": 158.42017
+      },
+      {
+        "FIELD1": 335,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 15,
+        "Catagory": "Time spent with coworkers",
+        "Value": 8.3420067
+      },
+      {
+        "FIELD1": 336,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 16,
+        "Catagory": "Time spent with coworkers",
+        "Value": 23.529137
+      },
+      {
+        "FIELD1": 337,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 17,
+        "Catagory": "Time spent with coworkers",
+        "Value": 43.809685
+      },
+      {
+        "FIELD1": 338,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 18,
+        "Catagory": "Time spent with coworkers",
+        "Value": 81.633575
+      },
+      {
+        "FIELD1": 339,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 19,
+        "Catagory": "Time spent with coworkers",
+        "Value": 124.85052
+      },
+      {
+        "FIELD1": 340,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 20,
+        "Catagory": "Time spent with coworkers",
+        "Value": 143.9003
+      },
+      {
+        "FIELD1": 341,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 21,
+        "Catagory": "Time spent with coworkers",
+        "Value": 154.20972
+      },
+      {
+        "FIELD1": 342,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 22,
+        "Catagory": "Time spent with coworkers",
+        "Value": 173.0473
+      },
+      {
+        "FIELD1": 343,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 23,
+        "Catagory": "Time spent with coworkers",
+        "Value": 190.10524
+      },
+      {
+        "FIELD1": 344,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 24,
+        "Catagory": "Time spent with coworkers",
+        "Value": 206.05486
+      },
+      {
+        "FIELD1": 345,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 25,
+        "Catagory": "Time spent with coworkers",
+        "Value": 199.20917
+      },
+      {
+        "FIELD1": 346,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 26,
+        "Catagory": "Time spent with coworkers",
+        "Value": 190.09406
+      },
+      {
+        "FIELD1": 347,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 27,
+        "Catagory": "Time spent with coworkers",
+        "Value": 211.48781
+      },
+      {
+        "FIELD1": 348,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 28,
+        "Catagory": "Time spent with coworkers",
+        "Value": 212.14497
+      },
+      {
+        "FIELD1": 349,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 29,
+        "Catagory": "Time spent with coworkers",
+        "Value": 199.11349
+      },
+      {
+        "FIELD1": 350,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 30,
+        "Catagory": "Time spent with coworkers",
+        "Value": 215.61365
+      },
+      {
+        "FIELD1": 351,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 31,
+        "Catagory": "Time spent with coworkers",
+        "Value": 199.06003
+      },
+      {
+        "FIELD1": 352,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 32,
+        "Catagory": "Time spent with coworkers",
+        "Value": 202.76134
+      },
+      {
+        "FIELD1": 353,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 33,
+        "Catagory": "Time spent with coworkers",
+        "Value": 186.96373
+      },
+      {
+        "FIELD1": 354,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 34,
+        "Catagory": "Time spent with coworkers",
+        "Value": 179.36411
+      },
+      {
+        "FIELD1": 355,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 35,
+        "Catagory": "Time spent with coworkers",
+        "Value": 190.68065
+      },
+      {
+        "FIELD1": 356,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 36,
+        "Catagory": "Time spent with coworkers",
+        "Value": 178.94667
+      },
+      {
+        "FIELD1": 357,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 37,
+        "Catagory": "Time spent with coworkers",
+        "Value": 188.47969
+      },
+      {
+        "FIELD1": 358,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 38,
+        "Catagory": "Time spent with coworkers",
+        "Value": 197.09261
+      },
+      {
+        "FIELD1": 359,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 39,
+        "Catagory": "Time spent with coworkers",
+        "Value": 172.79756
+      },
+      {
+        "FIELD1": 360,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 40,
+        "Catagory": "Time spent with coworkers",
+        "Value": 187.34126
+      },
+      {
+        "FIELD1": 361,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 41,
+        "Catagory": "Time spent with coworkers",
+        "Value": 179.37498
+      },
+      {
+        "FIELD1": 362,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 42,
+        "Catagory": "Time spent with coworkers",
+        "Value": 189.4864
+      },
+      {
+        "FIELD1": 363,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 43,
+        "Catagory": "Time spent with coworkers",
+        "Value": 169.79688
+      },
+      {
+        "FIELD1": 364,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 44,
+        "Catagory": "Time spent with coworkers",
+        "Value": 182.13411
+      },
+      {
+        "FIELD1": 365,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 45,
+        "Catagory": "Time spent with coworkers",
+        "Value": 182.52716
+      },
+      {
+        "FIELD1": 366,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 46,
+        "Catagory": "Time spent with coworkers",
+        "Value": 179.01489
+      },
+      {
+        "FIELD1": 367,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 47,
+        "Catagory": "Time spent with coworkers",
+        "Value": 171.43033
+      },
+      {
+        "FIELD1": 368,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 48,
+        "Catagory": "Time spent with coworkers",
+        "Value": 170.06847
+      },
+      {
+        "FIELD1": 369,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 49,
+        "Catagory": "Time spent with coworkers",
+        "Value": 187.72957
+      },
+      {
+        "FIELD1": 370,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 50,
+        "Catagory": "Time spent with coworkers",
+        "Value": 168.1844
+      },
+      {
+        "FIELD1": 371,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 51,
+        "Catagory": "Time spent with coworkers",
+        "Value": 172.19505
+      },
+      {
+        "FIELD1": 372,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 52,
+        "Catagory": "Time spent with coworkers",
+        "Value": 176.08771
+      },
+      {
+        "FIELD1": 373,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 53,
+        "Catagory": "Time spent with coworkers",
+        "Value": 168.29805
+      },
+      {
+        "FIELD1": 374,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 54,
+        "Catagory": "Time spent with coworkers",
+        "Value": 184.43581
+      },
+      {
+        "FIELD1": 375,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 55,
+        "Catagory": "Time spent with coworkers",
+        "Value": 162.92227
+      },
+      {
+        "FIELD1": 376,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 56,
+        "Catagory": "Time spent with coworkers",
+        "Value": 154.11407
+      },
+      {
+        "FIELD1": 377,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 57,
+        "Catagory": "Time spent with coworkers",
+        "Value": 157.73422
+      },
+      {
+        "FIELD1": 378,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 58,
+        "Catagory": "Time spent with coworkers",
+        "Value": 140.36014
+      },
+      {
+        "FIELD1": 379,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 59,
+        "Catagory": "Time spent with coworkers",
+        "Value": 140.17371
+      },
+      {
+        "FIELD1": 380,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 60,
+        "Catagory": "Time spent with coworkers",
+        "Value": 125.92768
+      },
+      {
+        "FIELD1": 381,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 61,
+        "Catagory": "Time spent with coworkers",
+        "Value": 126.77782
+      },
+      {
+        "FIELD1": 382,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 62,
+        "Catagory": "Time spent with coworkers",
+        "Value": 96.651878
+      },
+      {
+        "FIELD1": 383,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 63,
+        "Catagory": "Time spent with coworkers",
+        "Value": 78.317001
+      },
+      {
+        "FIELD1": 384,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 64,
+        "Catagory": "Time spent with coworkers",
+        "Value": 78.246071
+      },
+      {
+        "FIELD1": 385,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 65,
+        "Catagory": "Time spent with coworkers",
+        "Value": 62.186493
+      },
+      {
+        "FIELD1": 386,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 66,
+        "Catagory": "Time spent with coworkers",
+        "Value": 50.919098
+      },
+      {
+        "FIELD1": 387,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 67,
+        "Catagory": "Time spent with coworkers",
+        "Value": 44.558029
+      },
+      {
+        "FIELD1": 388,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 68,
+        "Catagory": "Time spent with coworkers",
+        "Value": 39.273418
+      },
+      {
+        "FIELD1": 389,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 69,
+        "Catagory": "Time spent with coworkers",
+        "Value": 27.190746
+      },
+      {
+        "FIELD1": 390,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 70,
+        "Catagory": "Time spent with coworkers",
+        "Value": 26.851473
+      },
+      {
+        "FIELD1": 391,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 71,
+        "Catagory": "Time spent with coworkers",
+        "Value": 21.892221
+      },
+      {
+        "FIELD1": 392,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 72,
+        "Catagory": "Time spent with coworkers",
+        "Value": 20.653986
+      },
+      {
+        "FIELD1": 393,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 73,
+        "Catagory": "Time spent with coworkers",
+        "Value": 18.386124
+      },
+      {
+        "FIELD1": 394,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 74,
+        "Catagory": "Time spent with coworkers",
+        "Value": 14.613341
+      },
+      {
+        "FIELD1": 395,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 75,
+        "Catagory": "Time spent with coworkers",
+        "Value": 16.36656
+      },
+      {
+        "FIELD1": 396,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 76,
+        "Catagory": "Time spent with coworkers",
+        "Value": 19.662245
+      },
+      {
+        "FIELD1": 397,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 77,
+        "Catagory": "Time spent with coworkers",
+        "Value": 12.47935
+      },
+      {
+        "FIELD1": 398,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 78,
+        "Catagory": "Time spent with coworkers",
+        "Value": 3.2494414
+      },
+      {
+        "FIELD1": 399,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 79,
+        "Catagory": "Time spent with coworkers",
+        "Value": 4.5325632
+      },
+      {
+        "FIELD1": 400,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 80,
+        "Catagory": "Time spent with coworkers",
+        "Value": 5.2152042
+      },
+      {
+        "FIELD1": 401,
+        "Entity": "United States",
+        "Code": "USA",
+        "Year": 85,
+        "Catagory": "Time spent with coworkers",
+        "Value": 3.5733819
+      }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "axis": {
+        "title": "Age",
+        "values": [20, 30, 40, 50, 60, 70, 80],
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Value",
+      "axis": {"grid": false, "title": "Time"},
+      "scale": {"domain": [0, 1500]}
+    },
+    "color": {"field": "Catagory", "scale": {"scheme": ["#fcf6f6", "#c24444"]},
+    "legend": {"orient": "top-right"}}
+  },
+  "config": {}
+}

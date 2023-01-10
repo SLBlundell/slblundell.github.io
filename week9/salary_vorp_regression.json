@@ -7,17 +7,15 @@
     "fontWeight": "normal",
     "fontSize": 16,
     "subtitle": [
-      "Linear regression of player salary on Win Share for the 2022/23 NBA season. Source: Basketball-Reference, HoopsHype.",
-      "Win Share (WS) is a measure of an individual player's offensive and defensive contribution to their team's wins",
-      "Green line: line of best fit. Players below this line underperform "
+      "Linear regression of player salary on Win Share for the 2022/23 NBA season.", "Source: Basketball-Reference, HoopsHype."
     ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "subtitleFont": "Roboto Mono",
     "anchor": "start"
   },
-  "width": 800,
-  "height": 500,
+  "width": 500,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/chart_4_player_data.csv"
   },

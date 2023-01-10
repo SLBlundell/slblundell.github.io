@@ -1,170 +1,170 @@
-,index,Variable,Correlation,Definition_x,Definition_y
-0,FG%,FG%,1.0,Field Goal Percentage,Field Goal Percentage
-1,FG%,3P%,0.5312299606998356,Field Goal Percentage,Field Goal Percentage
-2,FG%,2P%,0.7262723950607733,Field Goal Percentage,Field Goal Percentage
-3,FG%,AST,0.5780123996901281,Field Goal Percentage,Field Goal Percentage
-4,FG%,W,0.4135764198424999,Field Goal Percentage,Field Goal Percentage
-5,FG%,MOV,0.4959070377567465,Field Goal Percentage,Field Goal Percentage
-6,FG%,SRS,0.4994587860603665,Field Goal Percentage,Field Goal Percentage
-7,FG%,ORtg,0.5874039038823026,Field Goal Percentage,Field Goal Percentage
-8,FG%,NRtg,0.4899190844762773,Field Goal Percentage,Field Goal Percentage
-9,FG%,TS%,0.7838113706259432,Field Goal Percentage,Field Goal Percentage
-10,FG%,eFG%,0.7967447649094672,Field Goal Percentage,Field Goal Percentage
-11,FG%,P_W,0.4291328026679639,Field Goal Percentage,Field Goal Percentage
-12,FG%,Pay,0.3073437046189504,Field Goal Percentage,Field Goal Percentage
-13,3P%,FG%,0.5312299606998356,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-14,3P%,3P%,1.0,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-15,3P%,2P%,0.2124554592236532,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-16,3P%,AST,0.2766300155494167,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-17,3P%,W,0.3118128537145982,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-18,3P%,MOV,0.3801699994887501,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-19,3P%,SRS,0.3758504608111244,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-20,3P%,ORtg,0.4364025028928064,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-21,3P%,NRtg,0.3821143570030687,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-22,3P%,TS%,0.5560466413617231,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-23,3P%,eFG%,0.5533242404157189,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-24,3P%,P_W,0.3946256986760127,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-25,3P%,Pay,0.1371285035071673,3-Point Field Goal Percentage,3-Point Field Goal Percentage
-26,2P%,FG%,0.7262723950607733,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-27,2P%,3P%,0.2124554592236532,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-28,2P%,2P%,1.0,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-29,2P%,AST,0.5771452236372958,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-30,2P%,W,0.2309130948014338,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-31,2P%,MOV,0.4391850455863988,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-32,2P%,SRS,0.4420342009707149,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-33,2P%,ORtg,0.7895458831682785,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-34,2P%,NRtg,0.4167496637382283,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-35,2P%,TS%,0.8991599726647722,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-36,2P%,eFG%,0.922730121219516,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-37,2P%,P_W,0.3298300188007262,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-38,2P%,Pay,0.5478660838166604,2-Point Field Goal Percentage,2-Point Field Goal Percentage
-39,AST,FG%,0.5780123996901281,Assists,Assists
-40,AST,3P%,0.2766300155494167,Assists,Assists
-41,AST,2P%,0.5771452236372958,Assists,Assists
-42,AST,AST,1.0,Assists,Assists
-43,AST,W,0.2212079884599095,Assists,Assists
-44,AST,MOV,0.3341384741995784,Assists,Assists
-45,AST,SRS,0.3249510779184846,Assists,Assists
-46,AST,ORtg,0.3974859042860269,Assists,Assists
-47,AST,NRtg,0.3094167936453764,Assists,Assists
-48,AST,TS%,0.5177927859796656,Assists,Assists
-49,AST,eFG%,0.5832012532160846,Assists,Assists
-50,AST,P_W,0.3057107845272039,Assists,Assists
-51,AST,Pay,0.2474707171301089,Assists,Assists
-52,W,FG%,0.4135764198424999,Regular season wins,Regular season wins
-53,W,3P%,0.3118128537145982,Regular season wins,Regular season wins
-54,W,2P%,0.2309130948014338,Regular season wins,Regular season wins
-55,W,AST,0.2212079884599095,Regular season wins,Regular season wins
-56,W,W,1.0,Regular season wins,Regular season wins
-57,W,MOV,0.8574903132700883,Regular season wins,Regular season wins
-58,W,SRS,0.8520682989494012,Regular season wins,Regular season wins
-59,W,ORtg,0.2572250687021383,Regular season wins,Regular season wins
-60,W,NRtg,0.8652259386257536,Regular season wins,Regular season wins
-61,W,TS%,0.302781456996079,Regular season wins,Regular season wins
-62,W,eFG%,0.2865148047413346,Regular season wins,Regular season wins
-63,W,P_W,0.6377262029073679,Regular season wins,Regular season wins
-64,W,Pay,-0.0209589492814936,Regular season wins,Regular season wins
-65,MOV,FG%,0.4959070377567465,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-66,MOV,3P%,0.3801699994887501,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-67,MOV,2P%,0.4391850455863988,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-68,MOV,AST,0.3341384741995784,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-69,MOV,W,0.8574903132700883,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-70,MOV,MOV,1.0,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-71,MOV,SRS,0.993398184294717,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-72,MOV,ORtg,0.4841564249229168,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-73,MOV,NRtg,0.9984064241504336,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-74,MOV,TS%,0.5045594057230098,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-75,MOV,eFG%,0.4986087031206674,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-76,MOV,P_W,0.6200342660772267,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-77,MOV,Pay,0.0535463058193752,Margin of Victory; a measure of how many points a team typically wins or loses by,Margin of Victory; a measure of how many points a team typically wins or loses by
-78,SRS,FG%,0.4994587860603665,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-79,SRS,3P%,0.3758504608111244,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-80,SRS,2P%,0.4420342009707149,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-81,SRS,AST,0.3249510779184846,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-82,SRS,W,0.8520682989494012,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-83,SRS,MOV,0.993398184294717,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-84,SRS,SRS,1.0,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-85,SRS,ORtg,0.4968510952712028,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-86,SRS,NRtg,0.9917704307492896,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-87,SRS,TS%,0.5070729375626746,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-88,SRS,eFG%,0.4997674573306814,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-89,SRS,P_W,0.6018238116510675,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-90,SRS,Pay,0.0509608312074028,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average.","Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
-91,ORtg,FG%,0.5874039038823026,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-92,ORtg,3P%,0.4364025028928064,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-93,ORtg,2P%,0.7895458831682785,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-94,ORtg,AST,0.3974859042860269,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-95,ORtg,W,0.2572250687021383,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-96,ORtg,MOV,0.4841564249229168,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-97,ORtg,SRS,0.4968510952712028,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-98,ORtg,ORtg,1.0,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-99,ORtg,NRtg,0.4690510064801246,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-100,ORtg,TS%,0.8698906871930354,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-101,ORtg,eFG%,0.8550734544000823,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-102,ORtg,P_W,0.3196883957454191,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-103,ORtg,Pay,0.5754455052691232,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
-104,NRtg,FG%,0.4899190844762773,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-105,NRtg,3P%,0.3821143570030687,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-106,NRtg,2P%,0.4167496637382283,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-107,NRtg,AST,0.3094167936453764,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-108,NRtg,W,0.8652259386257536,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-109,NRtg,MOV,0.9984064241504336,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-110,NRtg,SRS,0.9917704307492896,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-111,NRtg,ORtg,0.4690510064801246,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-112,NRtg,NRtg,1.0,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-113,NRtg,TS%,0.488402073676871,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-114,NRtg,eFG%,0.4801244383638355,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-115,NRtg,P_W,0.6205524007448163,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-116,NRtg,Pay,0.0401910529463599,Net Rating; an estimate of point differential per 100 possessions.,Net Rating; an estimate of point differential per 100 possessions.
-117,TS%,FG%,0.7838113706259432,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-118,TS%,3P%,0.5560466413617231,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-119,TS%,2P%,0.8991599726647722,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-120,TS%,AST,0.5177927859796656,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-121,TS%,W,0.302781456996079,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-122,TS%,MOV,0.5045594057230098,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-123,TS%,SRS,0.5070729375626746,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-124,TS%,ORtg,0.8698906871930354,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-125,TS%,NRtg,0.488402073676871,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-126,TS%,TS%,1.0,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-127,TS%,eFG%,0.9792483627079414,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-128,TS%,P_W,0.4262888018578175,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-129,TS%,Pay,0.5143981424794625,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.","True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
-130,eFG%,FG%,0.7967447649094672,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-131,eFG%,3P%,0.5533242404157189,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-132,eFG%,2P%,0.922730121219516,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-133,eFG%,AST,0.5832012532160846,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-134,eFG%,W,0.2865148047413346,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-135,eFG%,MOV,0.4986087031206674,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-136,eFG%,SRS,0.4997674573306814,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-137,eFG%,ORtg,0.8550734544000823,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-138,eFG%,NRtg,0.4801244383638355,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-139,eFG%,TS%,0.9792483627079414,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-140,eFG%,eFG%,1.0,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-141,eFG%,P_W,0.416287794166233,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-142,eFG%,Pay,0.5326515951029699,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
-143,P_W,FG%,0.4291328026679639,Playoff wins,Playoff wins
-144,P_W,3P%,0.3946256986760127,Playoff wins,Playoff wins
-145,P_W,2P%,0.3298300188007262,Playoff wins,Playoff wins
-146,P_W,AST,0.3057107845272039,Playoff wins,Playoff wins
-147,P_W,W,0.6377262029073679,Playoff wins,Playoff wins
-148,P_W,MOV,0.6200342660772267,Playoff wins,Playoff wins
-149,P_W,SRS,0.6018238116510675,Playoff wins,Playoff wins
-150,P_W,ORtg,0.3196883957454191,Playoff wins,Playoff wins
-151,P_W,NRtg,0.6205524007448163,Playoff wins,Playoff wins
-152,P_W,TS%,0.4262888018578175,Playoff wins,Playoff wins
-153,P_W,eFG%,0.416287794166233,Playoff wins,Playoff wins
-154,P_W,P_W,1.0,Playoff wins,Playoff wins
-155,P_W,Pay,0.1314894673790183,Playoff wins,Playoff wins
-156,Pay,FG%,0.3073437046189504,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-157,Pay,3P%,0.1371285035071673,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-158,Pay,2P%,0.5478660838166604,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-159,Pay,AST,0.2474707171301089,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-160,Pay,W,-0.0209589492814936,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-161,Pay,MOV,0.0535463058193752,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-162,Pay,SRS,0.0509608312074028,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-163,Pay,ORtg,0.5754455052691232,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-164,Pay,NRtg,0.0401910529463599,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-165,Pay,TS%,0.5143981424794625,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-166,Pay,eFG%,0.5326515951029699,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-167,Pay,P_W,0.1314894673790183,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
-168,Pay,Pay,1.0,Active team payroll,Active team payroll adjusted for inflation and NBA league revenues (to ensure comparability between years
+,index,Variable,Correlation,Definition
+0,FG%,FG%,1,Field Goal Percentage
+1,FG%,3P%,0.531229961,Field Goal Percentage
+2,FG%,2P%,0.726272395,Field Goal Percentage
+3,FG%,AST,0.5780124,Field Goal Percentage
+4,FG%,W,0.41357642,Field Goal Percentage
+5,FG%,MOV,0.495907038,Field Goal Percentage
+6,FG%,SRS,0.499458786,Field Goal Percentage
+7,FG%,ORtg,0.587403904,Field Goal Percentage
+8,FG%,NRtg,0.489919084,Field Goal Percentage
+9,FG%,TS%,0.783811371,Field Goal Percentage
+10,FG%,eFG%,0.796744765,Field Goal Percentage
+11,FG%,P_W,0.429132803,Field Goal Percentage
+12,FG%,Pay,0.307343705,Field Goal Percentage
+13,3P%,FG%,0.531229961,3-Point Field Goal Percentage
+14,3P%,3P%,1,3-Point Field Goal Percentage
+15,3P%,2P%,0.212455459,3-Point Field Goal Percentage
+16,3P%,AST,0.276630016,3-Point Field Goal Percentage
+17,3P%,W,0.311812854,3-Point Field Goal Percentage
+18,3P%,MOV,0.380169999,3-Point Field Goal Percentage
+19,3P%,SRS,0.375850461,3-Point Field Goal Percentage
+20,3P%,ORtg,0.436402503,3-Point Field Goal Percentage
+21,3P%,NRtg,0.382114357,3-Point Field Goal Percentage
+22,3P%,TS%,0.556046641,3-Point Field Goal Percentage
+23,3P%,eFG%,0.55332424,3-Point Field Goal Percentage
+24,3P%,P_W,0.394625699,3-Point Field Goal Percentage
+25,3P%,Pay,0.137128504,3-Point Field Goal Percentage
+26,2P%,FG%,0.726272395,2-Point Field Goal Percentage
+27,2P%,3P%,0.212455459,2-Point Field Goal Percentage
+28,2P%,2P%,1,2-Point Field Goal Percentage
+29,2P%,AST,0.577145224,2-Point Field Goal Percentage
+30,2P%,W,0.230913095,2-Point Field Goal Percentage
+31,2P%,MOV,0.439185046,2-Point Field Goal Percentage
+32,2P%,SRS,0.442034201,2-Point Field Goal Percentage
+33,2P%,ORtg,0.789545883,2-Point Field Goal Percentage
+34,2P%,NRtg,0.416749664,2-Point Field Goal Percentage
+35,2P%,TS%,0.899159973,2-Point Field Goal Percentage
+36,2P%,eFG%,0.922730121,2-Point Field Goal Percentage
+37,2P%,P_W,0.329830019,2-Point Field Goal Percentage
+38,2P%,Pay,0.547866084,2-Point Field Goal Percentage
+39,AST,FG%,0.5780124,Assists
+40,AST,3P%,0.276630016,Assists
+41,AST,2P%,0.577145224,Assists
+42,AST,AST,1,Assists
+43,AST,W,0.221207988,Assists
+44,AST,MOV,0.334138474,Assists
+45,AST,SRS,0.324951078,Assists
+46,AST,ORtg,0.397485904,Assists
+47,AST,NRtg,0.309416794,Assists
+48,AST,TS%,0.517792786,Assists
+49,AST,eFG%,0.583201253,Assists
+50,AST,P_W,0.305710785,Assists
+51,AST,Pay,0.247470717,Assists
+52,W,FG%,0.41357642,Regular season wins
+53,W,3P%,0.311812854,Regular season wins
+54,W,2P%,0.230913095,Regular season wins
+55,W,AST,0.221207988,Regular season wins
+56,W,W,1,Regular season wins
+57,W,MOV,0.857490313,Regular season wins
+58,W,SRS,0.852068299,Regular season wins
+59,W,ORtg,0.257225069,Regular season wins
+60,W,NRtg,0.865225939,Regular season wins
+61,W,TS%,0.302781457,Regular season wins
+62,W,eFG%,0.286514805,Regular season wins
+63,W,P_W,0.637726203,Regular season wins
+64,W,Pay,-0.020958949,Regular season wins
+65,MOV,FG%,0.495907038,Margin of Victory; a measure of how many points a team typically wins or loses by
+66,MOV,3P%,0.380169999,Margin of Victory; a measure of how many points a team typically wins or loses by
+67,MOV,2P%,0.439185046,Margin of Victory; a measure of how many points a team typically wins or loses by
+68,MOV,AST,0.334138474,Margin of Victory; a measure of how many points a team typically wins or loses by
+69,MOV,W,0.857490313,Margin of Victory; a measure of how many points a team typically wins or loses by
+70,MOV,MOV,1,Margin of Victory; a measure of how many points a team typically wins or loses by
+71,MOV,SRS,0.993398184,Margin of Victory; a measure of how many points a team typically wins or loses by
+72,MOV,ORtg,0.484156425,Margin of Victory; a measure of how many points a team typically wins or loses by
+73,MOV,NRtg,0.998406424,Margin of Victory; a measure of how many points a team typically wins or loses by
+74,MOV,TS%,0.504559406,Margin of Victory; a measure of how many points a team typically wins or loses by
+75,MOV,eFG%,0.498608703,Margin of Victory; a measure of how many points a team typically wins or loses by
+76,MOV,P_W,0.620034266,Margin of Victory; a measure of how many points a team typically wins or loses by
+77,MOV,Pay,0.053546306,Margin of Victory; a measure of how many points a team typically wins or loses by
+78,SRS,FG%,0.499458786,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+79,SRS,3P%,0.375850461,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+80,SRS,2P%,0.442034201,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+81,SRS,AST,0.324951078,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+82,SRS,W,0.852068299,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+83,SRS,MOV,0.993398184,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+84,SRS,SRS,1,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+85,SRS,ORtg,0.496851095,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+86,SRS,NRtg,0.991770431,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+87,SRS,TS%,0.507072938,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+88,SRS,eFG%,0.499767457,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+89,SRS,P_W,0.601823812,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+90,SRS,Pay,0.050960831,"Simple Rating System; a team rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average."
+91,ORtg,FG%,0.587403904,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+92,ORtg,3P%,0.436402503,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+93,ORtg,2P%,0.789545883,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+94,ORtg,AST,0.397485904,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+95,ORtg,W,0.257225069,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+96,ORtg,MOV,0.484156425,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+97,ORtg,SRS,0.496851095,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+98,ORtg,ORtg,1,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+99,ORtg,NRtg,0.469051006,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+100,ORtg,TS%,0.869890687,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+101,ORtg,eFG%,0.855073454,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+102,ORtg,P_W,0.319688396,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+103,ORtg,Pay,0.575445505,Offensive Rating; An estimate of points produced (players) or scored (teams) per 100 possessions
+104,NRtg,FG%,0.489919084,Net Rating; an estimate of point differential per 100 possessions.
+105,NRtg,3P%,0.382114357,Net Rating; an estimate of point differential per 100 possessions.
+106,NRtg,2P%,0.416749664,Net Rating; an estimate of point differential per 100 possessions.
+107,NRtg,AST,0.309416794,Net Rating; an estimate of point differential per 100 possessions.
+108,NRtg,W,0.865225939,Net Rating; an estimate of point differential per 100 possessions.
+109,NRtg,MOV,0.998406424,Net Rating; an estimate of point differential per 100 possessions.
+110,NRtg,SRS,0.991770431,Net Rating; an estimate of point differential per 100 possessions.
+111,NRtg,ORtg,0.469051006,Net Rating; an estimate of point differential per 100 possessions.
+112,NRtg,NRtg,1,Net Rating; an estimate of point differential per 100 possessions.
+113,NRtg,TS%,0.488402074,Net Rating; an estimate of point differential per 100 possessions.
+114,NRtg,eFG%,0.480124438,Net Rating; an estimate of point differential per 100 possessions.
+115,NRtg,P_W,0.620552401,Net Rating; an estimate of point differential per 100 possessions.
+116,NRtg,Pay,0.040191053,Net Rating; an estimate of point differential per 100 possessions.
+117,TS%,FG%,0.783811371,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+118,TS%,3P%,0.556046641,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+119,TS%,2P%,0.899159973,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+120,TS%,AST,0.517792786,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+121,TS%,W,0.302781457,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+122,TS%,MOV,0.504559406,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+123,TS%,SRS,0.507072938,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+124,TS%,ORtg,0.869890687,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+125,TS%,NRtg,0.488402074,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+126,TS%,TS%,1,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+127,TS%,eFG%,0.979248363,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+128,TS%,P_W,0.426288802,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+129,TS%,Pay,0.514398142,"True Shooting Percentage; A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws."
+130,eFG%,FG%,0.796744765,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+131,eFG%,3P%,0.55332424,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+132,eFG%,2P%,0.922730121,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+133,eFG%,AST,0.583201253,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+134,eFG%,W,0.286514805,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+135,eFG%,MOV,0.498608703,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+136,eFG%,SRS,0.499767457,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+137,eFG%,ORtg,0.855073454,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+138,eFG%,NRtg,0.480124438,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+139,eFG%,TS%,0.979248363,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+140,eFG%,eFG%,1,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+141,eFG%,P_W,0.416287794,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+142,eFG%,Pay,0.532651595,Effective Field Goal Percentage; This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+143,P_W,FG%,0.429132803,Playoff wins
+144,P_W,3P%,0.394625699,Playoff wins
+145,P_W,2P%,0.329830019,Playoff wins
+146,P_W,AST,0.305710785,Playoff wins
+147,P_W,W,0.637726203,Playoff wins
+148,P_W,MOV,0.620034266,Playoff wins
+149,P_W,SRS,0.601823812,Playoff wins
+150,P_W,ORtg,0.319688396,Playoff wins
+151,P_W,NRtg,0.620552401,Playoff wins
+152,P_W,TS%,0.426288802,Playoff wins
+153,P_W,eFG%,0.416287794,Playoff wins
+154,P_W,P_W,1,Playoff wins
+155,P_W,Pay,0.131489467,Playoff wins
+156,Pay,FG%,0.307343705,Active team payroll
+157,Pay,3P%,0.137128504,Active team payroll
+158,Pay,2P%,0.547866084,Active team payroll
+159,Pay,AST,0.247470717,Active team payroll
+160,Pay,W,-0.020958949,Active team payroll
+161,Pay,MOV,0.053546306,Active team payroll
+162,Pay,SRS,0.050960831,Active team payroll
+163,Pay,ORtg,0.575445505,Active team payroll
+164,Pay,NRtg,0.040191053,Active team payroll
+165,Pay,TS%,0.514398142,Active team payroll
+166,Pay,eFG%,0.532651595,Active team payroll
+167,Pay,P_W,0.131489467,Active team payroll
+168,Pay,Pay,1,Active team payroll

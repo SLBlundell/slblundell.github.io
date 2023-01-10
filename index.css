@@ -88,7 +88,6 @@ h3, p{
     margin-right: auto;     
     padding: 7.5px;
     border-top:    1px solid  var(--grey);
-    border-bottom: 1px solid var(--grey);
 }
 .chart9-2{
     width: 360px;
@@ -96,7 +95,6 @@ h3, p{
     margin-right: auto;     
     padding: 7.5px;
     border-top:    1px solid  var(--grey);
-    border-bottom: 1px solid var(--grey);
 }
 
 /* Set the apperance of the class, chart */
@@ -185,3 +183,8 @@ h3, p{
     margin-inline: auto;
     text-align: center;
   }
+
+  img {
+  width: 100%;
+  height: auto;
+}
