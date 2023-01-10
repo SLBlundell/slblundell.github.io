@@ -170,3 +170,22 @@ h3, p{
       padding-right: 30px;
     }
   }
+
+  .button {
+    background-color: #717e89;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+  .button:hover {
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.2);
+}
