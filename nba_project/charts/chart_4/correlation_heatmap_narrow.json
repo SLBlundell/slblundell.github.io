@@ -4,21 +4,21 @@
     "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/chart_4_correlations.csv"
   },
   "title": {
-    "text": "Player variables most correlated with salary for 2022/23 NBA season",
+    "text": ["Player variables most correlated", "with salary for 2022/23 NBA season"],
     "font": "SuisseIntl-FreeTrial",
     "color": "#212528",
     "fontWeight": "normal",
-    "fontSize": 16,
+    "fontSize": 12,
     "subtitle": [
       "Source: calculations, Basketball-Reference, HoopsHype"
     ],
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 11,
+    "subtitleFontSize": 10,
     "subtitleFont": "Roboto Mono",
     "anchor": "start"
   },
-  "width": 570,
-  "height": 500,
+  "width": 300,
+  "height": 300,
   "encoding": {
     "y": {"field": "index", "type": "ordinal", "title": null},
     "x": {"field": "Variable", "type": "ordinal", "title": null, "axis": {"labelAngle": 0}},
@@ -38,8 +38,7 @@
           "scale": {"scheme": ["#e9f6b2", "#5c6245"]},
           "type": "quantitative",
           "title": "Correlation Coefficient",
-          "legend": {"direction": "horizontal", "gradientLength": 120, 
-          "titleFont": "SuisseIntl-FreeTrial", "titleFontWeight": "normal", "titleFontSize": 12}
+          "legend": null
         }
       }
     },
@@ -49,7 +48,7 @@
         "text": {
           "field": "Correlation",
           "type": "quantitative",
-          "format": ".2f"
+          "format": ".1f"
         },
         "color": {
           "condition": {
@@ -62,7 +61,7 @@
     }
   ],
   "config": {
-    "axis": {"grid": true, "tickBand": "extent", "labelFont": "Roboto Mono"},
+    "axis": {"grid": true, "tickBand": "extent", "labelFont": "Roboto Mono", "labelFontSize": 10},
     "font": "Roboto Mono"
   }
 }

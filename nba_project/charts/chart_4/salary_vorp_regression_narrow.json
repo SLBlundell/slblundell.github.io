@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": ["Highly paid players are typically", "poor value for money on the court"],
+    "font": "SuisseIntl-FreeTrial",
+    "color": "#212528",
+    "fontWeight": "normal",
+    "fontSize": 12,
+    "subtitle": [
+      "Linear regression of player salary", "on Win Share for the 2022/23 NBA season.", "Source: Basketball-Reference, HoopsHype."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleFont": "Roboto Mono",
+    "anchor": "start"
+  },
+  "width": 275,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/SLBlundell/slblundell.github.io/main/nba_project/data/chart_4_player_data.csv"
+  },
+  "layer": [
+    {
+      "params": [{"name": "grid", "select": "interval", "bind": "scales"}, {
+      "name": "Position",
+      "select": {"type": "point", "fields": ["Pos"]},
+      "bind": {"input": "select", "options": [null, "C", "PG", "PF", "SG", "SF"], 
+      "name": "Select Position: "}
+    }],
+      "mark": {
+        "type": "point",
+        "color": "#DF9D9D",
+        "filled": false,
+        "fillOpacity": 1.5,
+        "size": 30,
+        "tooltip": {"content": "data"}
+      },
+      "encoding": {
+        "x": {
+          "field": "Salary 2022/23",
+          "title": "Salary",
+          "type": "quantitative",
+          "axis": {
+            "titleFont": "SuisseIntl-FreeTrial",
+            "format": "$,.0f",
+            "titleFontWeight": "normal",
+            "titleFontSize": 10
+          }
+        },
+        "y": {
+          "field": "WS",
+          "title": "Win Share",
+          "type": "quantitative",
+          "axis": {
+            "titleFont": "SuisseIntl-FreeTrial",
+            "titleFontWeight": "normal",
+            "titleFontSize": 10
+          }
+          
+        },
+        "color": {      
+          "condition": {"param": "Position"},
+          "value": "#717e89"}
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#C1CE8C"},
+      "transform": [
+        {"regression": "Salary 2022/23", "on": "WS", "method": "linear"}
+      ],
+      "encoding": {
+        "x": {"field": "Salary 2022/23", "type": "quantitative"},
+        "y": {"field": "WS", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {"font": "Roboto Mono"}
+}
