@@ -92,7 +92,7 @@ svg {
 h1{
     color: var(--text);
     font-family: 'gzasuper';
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
     border-bottom: 2.5px solid var(--text);
     padding: 5px;
