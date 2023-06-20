@@ -1,0 +1,191 @@
+:root {
+    --pink: #DF9D9D;
+    --green: #C1CE8C;
+    --grey: #212528;
+    --red: #FC0000;
+    --text: black;
+    --fs-18: 1.125rem;
+    --container: 69.375rem
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+@font-face {
+    font-family: 'gzasuper';
+    src: url('assets/gza_super/gza-super-webfont.woff2') format('woff2'),
+         url('assets/gza_super/gza-super-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SuisseIntl-FreeTrial';
+    src: url('assets/SuisseIntl-FreeTrial/Web/Woff2/SuisseIntl-Regular-WebTrial.woff2') format('woff2'),
+         url('assets/SuisseIntl-FreeTrial/Web/Woff/SuisseIntl-Regular-WebTrial.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+/* Set the background color for my page: */
+body{
+    background-color: rgb(255, 255, 255);
+ 
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1{
+    color:var(--grey);
+    font-family: 'gzasuper';
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 2.5px solid var(--grey);
+    padding: 5px;
+}
+
+h2{
+    color:rgb(17, 17, 17);
+    font-family: 'SuisseIntl-FreeTrial';
+    font-size: 25px;
+    text-align: center;
+
+}
+
+h3, p{
+    color: rgb(17, 17, 17);
+    font-family: 'Roboto Mono', 'normal';
+    text-align: center;
+}
+
+.week{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+}
+
+.chart5{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;     
+    padding: 7.5px;
+    border-top:    1px transparent  var(--grey);
+    border-bottom: 1px solid var(--grey);
+}
+
+.chart9-1{
+    width: 235px;
+    margin-left: auto;
+    margin-right: auto;     
+    padding: 7.5px;
+    border-top:    1px solid  var(--grey);
+}
+.chart9-2{
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;     
+    padding: 7.5px;
+    border-top:    1px solid  var(--grey);
+}
+
+/* Set the apperance of the class, chart */
+.chart{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7.5px;
+    border-top:    1px solid  var(--grey);
+    border-bottom: 1px solid var(--grey);
+}
+
+.wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+  text-align: center;
+
+}
+
+img,
+svg {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.visually-hidden {
+position: absolute;
+left: -10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+
+/* HEADER */
+
+.header {
+  position: relative;
+  z-index: 1;
+  margin-block-start: 20px;
+  background-color: white;
+  padding: 10px;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 10px 25px;
+  padding-bottom: 10px;
+  border-bottom: 2.5px solid var(--text);
+}
+
+.header__home {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+  line-height: 1;
+  color: var(--text);
+  text-decoration: none;
+  flex: 1 0 100%;
+  font-family: 'SuisseIntl-FreeTrial';
+}
+
+.header__social:hover > svg > path {
+  fill: var(--green);
+}
+
+@media (min-width: 37.5em) {
+
+  .header__nav {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 32px;
+  }
+
+  .header__home {
+    flex: 0 1 auto;
+    margin-inline-end: auto;
+  }
+}
+
+@media (min-width: 62.5em) {
+
+
+  .header__nav {
+    padding-right: 30px;
+  }
+}

@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Data Science</title>
+
+    <!-- Link to my style sheet, fonts -->
+    <link rel="stylesheet" href="datascience.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+<body>
+     <!-- HEADER -->
+     <header class="header" id="webHeader">
+      <h2 class="visually-hidden">Header</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="/" class="header__home">
+            Sam Blundell: Portfolio
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+          <a href="https://github.com/SLBlundell" target=”_blank” class="header__social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              aria-labelledby="socialGitHub"
+              role="img"
+            >
+              <title id="socialGitHub">GitHub</title>
+              <path
+                fill="#000"
+                fill-rule="evenodd"
+                d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sam-blundell-7608b7196/" target=”_blank” class="header__social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              aria-labelledby="socialLinkedIn"
+              role="img"
+            >
+              <title id="socialLinkedIn">LinkedIn</title>
+              <path
+                fill="#000"
+                fill-rule="evenodd"
+                d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+              />
+            </svg>
+          </a>
+            <a href="index.html" class="header__social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 25 25"
+                aria-labelledby="menu"
+                role="img"
+              >
+              <title id="socialHome">Home</title>
+                <path
+                  fill="#000"
+                  fill-rule="evenodd"
+                  d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"
+                />
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <!--END OF HEADER -->
+    
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="week">
+        <h1>Data Science for Economists.</h1>
+        
+        <h2>GDP</h2>
+        <p>The first chart tracks quarterly GDP in the UK</p>
+        <div class="chart" id="Chart1"></div>
+
+        <h2>Labour Market</h2>
+        <p>The second chart looks at the unemployment rate of 25-49 year olds in the UK</p>
+        <div class="chart" id="Chart2"> </div>
+
+        <h2>IMF Loans</h2>
+        <p>Week 2 portfolio charts</p>
+        <div class="chart" id="Chart3"></div>
+        
+        <h2></h2>
+        <p>Adjusted for inflation, it would seem that 2020 is still the riskiest year.
+            <br>However, IMF debt is far more stable year on year when adjusted.
+        </p>
+        <div class="chart" id="Chart4"> </div>
+    
+        <h2>Who Americans spend their time with, by age</h2>
+        <p>Week 3 portfolio charts</p>
+        <div class="chart" id="Chart22"></div>
+        <p>Changing the encoding from a line graph to a stacked line graph enables easier comparison of magnitudes, and results in a simpler appearance</p>
+        <div class="chart" id="Chart23"></div>
+
+        <h2>NBA Team Payrolls 2011 - 2022</h2>
+        <p>Week 4 portfolio chart</p>
+        <div class="chart" id="Chart5" style="border-bottom: none"></div>
+        <p style="border-bottom: 2.5px solid var(--grey); padding: 15px">Spotrac was chosen in order to quickly aggregate data from different tables for multiple years</p>
+        
+        <h2>UK Labour Market Dashboard - ONS</h2>
+        <p>Week 5 portfolio charts</p>
+        <div class="chart5" id="Chart6"></div><div class="chart5" id="Chart7"></div><div class="chart5" id="Chart8"></div>
+        <div class="chart5" id="Chart9"></div><div class="chart5" id="Chart10"></div><div class="chart5" id="Chart11"></div>
+        <div class="chart5" id="Chart12"></div><div class="chart5" id="Chart13"></div><div class="chart5" id="Chart14"></div>
+        <div class="chart5" id="Chart15" style="border-bottom: none"></div><div class="chart5" id="Chart16" style="border-bottom: none"></div><div class="chart5" id="Chart17" style="border-bottom: none"></div>
+        <p style="border-bottom: 2.5px solid var(--grey); padding: 15px">
+          <a href="https://github.com/SLBlundell/slblundell.github.io/blob/main/week5/ons_batch.ipynb">Jupyter Notebook</a>
+          </p>
+        <h2>Maps of Hong Kong's Administrative Districts</h2>
+        <p>Week 7 portfolio charts</p>
+        <div class="chart" id="Chart18"></div>
+        <p>This map shows the extreme state of regional inequality in Hong Kong</p>
+        <div class="chart" id="Chart19"></div>
+        <h2>"Behaviour Change from Smart Meter Usage is the most important factor in reducing Energy Consumption"</h2>
+        <p>Week 8 portfolio charts</p>
+         <div class="chart9-1" id="Chart20"></div>
+        <div class="chart9-2" id="Chart21"></div>
+        <p> Over sample counrtries, the relationship between smart meter usage and energy consumption is currently unclear.</p>
+
+        <h2>NBA Salaries on Win Share</h2>
+        <p>Week 9 portfolio charts</p>
+         <div class="chart" id="Chart24"></div>
+        <div class="chart" id="Chart25"></div>
+
+        <h2>Predicting NBA playoff performance via linear regression</h2>
+        <p>Week 10-11 portfolio charts<br>Hypothesis: Using data from the modern NBA, can playoff performance be accurately predicted for the 2022/23 season?</p>
+        <img src="nba_project/figures/win_rating_bar.jpeg" alt="Bar chart of predicted playoff ratings">
+        <p>The team with most wins currently does not have the highest predicted rating, rather the Denver Nuggets is highest rated given their high shooting efficiency.<br>
+          <a href="https://github.com/SLBlundell/slblundell.github.io/blob/main/nba_project/charts/chart_3/model.ipynb">Jupyter Notebook</a></p>
+        <h2>Predicting positions of NBA players</h2>
+        <p>Hypothesis: Determining whether there is any significant clustering of NBA player statistics based on player position</p>
+        <img src="nba_project/figures/clusters.png"><br><img src="nba_project/figures/catagories.png">
+        <p>There is little similarity between predicted catagories and positions (correlation of -.02), as such there is no significant clustering based on position.<br>
+        <a href="https://github.com/SLBlundell/slblundell.github.io/blob/main/nba_project/charts/chart_4/model_players.ipynb">Jupyter Notebook</a></p>
+        </div>
+  </div> 
+
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "week1/chartGDP4.json";
+    var myChart2 = "week1/labmkt6.json";
+    var myChart3 = "week2/imf_loans.json";
+    var myChart4 = "week2/imf_loans_adjusted.json";
+    var myChart5 = "week4/payrolls.json"
+
+    var myChart6 = "week5/ons_json_MGRQ_chart.json"
+    var myChart7 = "week5/ons_json_JWS7_chart.json"
+    var myChart8 = "week5/ons_json_LF2O_chart.json"
+    var myChart9 = "week5/ons_json_LF2S_chart.json"
+    var myChart10 = "week5/ons_json_LF24_chart.json"
+    var myChart11 = "week5/ons_json_G9BZ_chart.json"
+    var myChart12 = "week5/ons_json_MGSX_chart.json"
+    var myChart13 = "week5/ons_json_MGSY_chart.json"
+    var myChart14 = "week5/ons_json_MGSZ_chart.json"
+    var myChart15 = "week5/ons_json_YCBE_chart.json"
+    var myChart16 = "week5/ons_json_YCBH_chart.json"
+    var myChart17 = "week5/ons_json_YCBW_chart.json"
+
+    var myChart18 = "week7/hk/hk_admin.json";
+    var myChart19 = "week7/hk/hk_admin_income.json";
+    var myChart20 = "week8/smart_meter_deployment.json";
+    var myChart21 = "week8/energy_consumption.json";
+    var myChart22 = "week3/relationships_lines.json";
+    var myChart23 = "week3/relationships_stacked.json";
+    var myChart24 = "week9/salary_vorp_regression.json";
+    var myChart25 = "week9/correlation_heatmap.json";
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);    
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15);
+    vegaEmbed('#Chart16', myChart16);
+    vegaEmbed('#Chart17', myChart17);
+
+    vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19);
+    vegaEmbed('#Chart20', myChart20);
+    vegaEmbed('#Chart21', myChart21);
+    vegaEmbed('#Chart22', myChart22);
+    vegaEmbed('#Chart23', myChart23);
+    vegaEmbed('#Chart24', myChart24);
+    vegaEmbed('#Chart25', myChart25);
+
+</script>
+
+</html>
+
+
